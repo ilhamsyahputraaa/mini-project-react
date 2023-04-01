@@ -1,0 +1,1200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OnFLix</title>
+    <link rel="icon" href="/src/logo/Logogram dark2.png">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- External Style -->
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+
+</head>
+
+<body id="body-background">
+    <div>
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-dark nav-transparent position-fixed w-100">
+            <div class="container-fluid  ">
+                <!-- Logo Website -->
+              <a class="navbar-brand" href="#"><img src="/src/onflix logo.png" alt="onflix" style="width: 9rem"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+
+              <!-- Area Burger Menu -->
+              <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                <!-- Menu -->
+                <ul class="navbar-nav col justify-content-center mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link nav-active" aria-current="page" href="./index.html">Home</a>
+                  </li>
+                  <li class="nav-item"><a class="nav-link" href="#coming-soon">Coming Soon</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#on-cinema">On Cinema</a></li>
+                  <li class="nav-item"><a class="nav-link" href="./contact-us.html">Contact Us</a></li>
+                </ul>
+                <!-- Button Log In -->
+                <button type="button" class="btn btn-warning me-2" data-bs-toggle="modal" data-bs-target="#signInModal">Log In</button>
+                
+              </div>
+            </div>
+          </nav>
+
+        <!-- Carousel Header -->
+        <section id="header-carousel">
+            <div id="carouselHeader" class="carousel slide" data-bs-ride="carousel">
+                <!-- indicator Carousel -->
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselHeader" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselHeader" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselHeader" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+
+                <div class="carousel-inner">
+                    <!-- carousel 1 -->
+                    <div class="carousel-item active" data-bs-interval="5000" >
+                        <div class="header-tenet container-fluid">
+                            <div class="row d-flex align-items-center header-content color-overlay">
+                                <!-- Description -->
+                                <div class="header-description col-lg-4 col-sm-12">
+                                    <h1 class="mb-4
+                                    ">Oppenheimer</h1>
+                                    <div class="info-icons mb-4">
+                                        <span class="rate-label-header"> Action </span>
+                                        <span class="info-label-header"> <img src="src/clock.svg" alt="">105 Minutes</span>
+                                        <span class="info-label-header"> <img src="src/eye.svg" alt="">12,7 K</span>
+                                    </div>
+                                    <p class="mb-4">The story of American scientist J. Robert Oppenheimer works with a team of scientists during the Manhattan Project, leading to the development of the atomic bomb.</p>
+                                    <span>
+                                        <button type="button" class="btn btn-warning me-2" data-bs-toggle="modal" data-bs-target="#exampleModal3">View Detail</button>
+
+                                        <a class="btn btn-secondary " href="https://www.youtube.com/watch?v=bK6ldnjE3Y0&t=2s" role="button" target="blank"><img src="./src/play-fill 1.svg" alt="" class="watch-icon" > Watch Trailer</a>
+                                    </span>
+                                    
+                                </div>
+    
+                            </div>
+
+                        </div>
+                        
+                    </div>
+                    <!-- carousel 2 -->
+                    <div class="carousel-item" data-bs-interval="5000" >
+                        <div class="header-dunkirk">
+                        <div class="row d-flex align-items-center header-content color-overlay">
+                            <!-- Description -->
+                            <div class="header-description col-lg-4 col-sm-12">
+                                <h1 class="mb-4
+                                ">Dunkirk</h1>
+                                <div class="info-icons mb-4">
+                                    <span class="rate-label-header"> Action </span>
+                                    <span class="info-label-header"> <img src="src/clock.svg" alt="">122 Minutes</span>
+                                    <span class="info-label-header"> <img src="src/eye.svg" alt="">19 M</span>
+                                </div>
+                                <p class="mb-4">Allied soldiers from Belgium, the British Commonwealth and Empire, and France are surrounded by the German Army and evacuated during a fierce battle in World War II.</p>
+                                <span>
+                                    <button type="button" class="btn btn-warning me-2" data-bs-toggle="modal" data-bs-target="#exampleModal2">View Detail</button>
+
+                                    <a class="btn btn-secondary " href="https://www.youtube.com/watch?v=T7O7BtBnsG4" role="button" target="blank"><img src="./src/play-fill 1.svg" alt="" class="watch-icon" > Watch Trailer</a>
+                                </span>
+                                
+                            </div>
+
+                        </div>
+
+                        </div>
+                    </div>
+
+                    <!-- carousel 3 -->
+                    <div class="carousel-item" data-bs-interval="5000" >
+                        <div class="header-inter">
+                            <div class="row d-flex align-items-center header-content color-overlay">
+                                <!-- Description -->
+                                <div class="header-description col-lg-4 col-sm-12">
+                                    <h1 class="mb-4
+                                    ">Interstellar</h1>
+                                    <div class="info-icons mb-4">
+                                        <span class="rate-label-header"> Action </span>
+                                        <span class="info-label-header"> <img src="src/clock.svg" alt="">132 Minutes</span>
+                                        <span class="info-label-header"> <img src="src/eye.svg" alt="">27 M</span>
+                                    </div>
+                                    <p class="mb-4">A team of explorers travel through a wormhole in space in an attempt to ensure humanity's survival.</p>
+                                    <span>
+                                        <button type="button" class="btn btn-warning me-2" data-bs-toggle="modal" data-bs-target="#exampleModal1">View Detail</button>
+    
+                                        <a class="btn btn-secondary " href="https://www.youtube.com/watch?v=Lm8p5rlrSkY" role="button" target="blank"><img src="./src/play-fill 1.svg" alt="" class="watch-icon" > Watch Trailer</a>
+                                    </span>
+                                    
+                                </div>
+    
+                                <!-- Poster -->
+    
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+
+                <!-- Carousel Control -->
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselHeader" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+                
+            </div>
+
+        </section>
+
+        <!-- Alert -->
+        <div id="alert-fixed">
+            <div class="alert alert-success alert-dismissible fade show alert-absolute" role="alert">
+            <strong>Yeay!</strong> Cek film terbaru yang akan rilis di bioskop di halaman coming soon!
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+        </div>
+        
+        <!-- Dark Mode -->
+        <div class="form-check form-switch darkmode-switch">
+            
+            <button type="button" class=" btn btn-secondary" id="light-mode">Light mode</button>
+        </div>
+
+        <!-- Watch List -->
+        <section id="watch-list" class="py-5 overflow-hidden">
+            <div class="container-xl pb-4 pt-4 watch-list-slider">
+                <!-- Head -->
+                <div class="row mb-3 me-3 ms-3"  >
+                    <div class="col-9">
+                        <h5 id="section-head1"> 
+                            Watch List
+                        </h5>
+                    </div>
+                    <div class="col-3 d-flex justify-content-end">
+                        <button type="button" class="btn btn-warning">View</button>
+                    </div>
+                </div>
+
+                <!-- Carousel Product Card -->
+                <div id="carouselExampleControls" class="carousel" data-bs-ride="carousel">
+                    <!-- Carousel 1 -->
+                    <div class="carousel-inner carousel-product">
+                      <div class="carousel-item active">
+                        <!-- Product Card -->
+                        <div class="column d-flex justify-content-start col-12  position-relative me-3 ms-3 product-card-container">
+                            <!-- Dark Knight -->
+                            <div class="card bg-dark text-white col-lg-2 col-md-3 col-sm-4 col-4">
+                                <img src="src/regular-poster/Creed.png" class="card-img" alt="...">
+                                <div class="card-img-overlay d-flex align-items-end">
+                                    <div class="rate-label position-absolute end-0">Action</div>
+                                    <div class="text-container position-absolute" >
+                                        <div class="info-icons">
+                                            <span class="info-label"> <img src="src/clock.svg" alt="">105 Minutes</span>
+                                            <span class="info-label"> <img src="src/eye.svg" alt="">12,7 K</span>
+                                        </div>
+                                        <h5 class="card-title col-12">Creed23 III</h5>
+                                        <span>
+                                            <button type="button" class="btn btn-warning btn-view col-5" data-bs-toggle="modal" data-bs-target="#exampleModal1">View</button>
+
+                                            <a class="btn btn-secondary btn-watch col-6" href="https://www.youtube.com/watch?v=bK6ldnjE3Y0&t=2s" role="button" target="blank"><img src="./src/play-fill 1.svg" alt="" class="watch-icon" > Watch</a>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Dark Knight Rises -->
+                            <div class="card bg-dark text-white col-lg-2 col-md-3 col-sm-4 col-4">
+                                <img src="src/regular-poster/dark-knight-rises-poster.png" class="card-img" alt="...">
+                                <div class="card-img-overlay d-flex align-items-end">
+                                    <div class="rate-label position-absolute end-0">Action</div>
+                                    <div class="text-container position-absolute" >
+                                        <div class="info-icons">
+                                            <span class="info-label"> <img src="src/clock.svg" alt="">105 Minutes</span>
+                                            <span class="info-label"> <img src="src/eye.svg" alt="">12,7 K</span>
+                                        </div>
+                                        <h5 class="card-title col-12">Dark Knight Rises</h5>
+                                        <span>
+                                            <button type="button" class="btn btn-warning btn-view col-5" data-bs-toggle="modal" data-bs-target="#exampleModal2">View</button>
+                                            <a class="btn btn-secondary btn-watch col-6" href="https://www.youtube.com/watch?v=bK6ldnjE3Y0&t=2s" role="button" target="blank"><img src="./src/play-fill 1.svg" alt="" class="watch-icon" > Watch</a>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Tenet -->
+                            <div class="card bg-dark text-white col-lg-2 col-md-3 col-sm-4 col-4">
+                                <img src="src/regular-poster/wolf-wallstreet-poster.png" class="card-img" alt="...">
+                                <div class="card-img-overlay d-flex align-items-end">
+                                    <div class="rate-label position-absolute end-0">Comedy</div>
+                                    <div class="text-container position-absolute" >
+                                        <div class="info-icons">
+                                            <span class="info-label"> <img src="src/clock.svg" alt="">105 Minutes</span>
+                                            <span class="info-label"> <img src="src/eye.svg" alt="">12,7 K</span>
+                                        </div>
+                                        <h5 class="card-title col-12">Wolf of Wallstreet</h5>
+                                        <span>
+                                            <button type="button" class="btn btn-warning btn-view col-5" data-bs-toggle="modal" data-bs-target="#exampleModal3">View</button>
+                                            <a class="btn btn-secondary btn-watch col-6" href="https://www.youtube.com/watch?v=bK6ldnjE3Y0&t=2s" role="button" target="blank"><img src="./src/play-fill 1.svg" alt="" class="watch-icon" > Watch</a>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Revenant -->
+                            <div class="card bg-dark text-white col-lg-2 col-md-3 col-sm-4 col-4">
+                                <img src="src/regular-poster/revenant-poster.png" class="card-img" alt="...">
+                                <div class="card-img-overlay d-flex align-items-end">
+                                    <div class="rate-label position-absolute end-0">Drama</div>
+                                    <div class="text-container position-absolute" >
+                                        <div class="info-icons">
+                                            <span class="info-label"> <img src="src/clock.svg" alt="">132 Minutes</span>
+                                            <span class="info-label"> <img src="src/eye.svg" alt="">2 M</span>
+                                        </div>
+                                        <h5 class="card-title col-12">Revenant</h5>
+                                        <span>
+                                            <button type="button" class="btn btn-warning btn-view col-5" data-bs-toggle="modal" data-bs-target="#exampleModal1">View</button>
+                                            <a class="btn btn-secondary btn-watch col-6" href="https://www.youtube.com/watch?v=bK6ldnjE3Y0&t=2s" role="button" target="blank"><img src="./src/play-fill 1.svg" alt="" class="watch-icon" > Watch</a>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Oppenheimer -->
+                            <div class="card bg-dark text-white col-lg-2 col-md-3 col-sm-4 col-4">
+                                <img src="src/regular-poster/inception-poster.png" class="card-img" alt="...">
+                                <div class="card-img-overlay d-flex align-items-end">
+                                    <div class="rate-label position-absolute end-0">Action</div>
+                                    <div class="text-container position-absolute" >
+                                        <div class="info-icons">
+                                            <span class="info-label"> <img src="src/clock.svg" alt="">124 Minutes</span>
+                                            <span class="info-label"> <img src="src/eye.svg" alt="">600 K</span>
+                                        </div>
+                                        <h5 class="card-title col-12">Inception</h5>
+                                        <span>
+                                            <button type="button" class="btn btn-warning btn-view col-5" data-bs-toggle="modal" data-bs-target="#exampleModal1">View</button>
+                                            <a class="btn btn-secondary btn-watch col-6" href="https://www.youtube.com/watch?v=bK6ldnjE3Y0&t=2s" role="button" target="blank"><img src="./src/play-fill 1.svg" alt="" class="watch-icon" > Watch</a>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Wolf of Wallstreet -->
+                            <div class="card bg-dark text-white col-lg-2 col-md-3 col-sm-4 col-4">
+                                <img src="src/tenet.png" class="card-img" alt="...">
+                                <div class="card-img-overlay d-flex align-items-end">
+                                    <div class="rate-label position-absolute end-0"> Action</div>
+                                    <div class="text-container position-absolute" >
+                                        <div class="info-icons">
+                                            <span class="info-label"> <img src="src/clock.svg" alt="">105 Minutes</span>
+                                            <span class="info-label"> <img src="src/eye.svg" alt="">12,7 K</span>
+                                        </div>
+                                        <h5 class="card-title col-12">Tenet</h5>
+                                        <span>
+                                            <button type="button" class="btn btn-warning btn-view col-5" data-bs-toggle="modal" data-bs-target="#exampleModal2">View</button>
+                                            <a class="btn btn-secondary btn-watch col-6" href="https://www.youtube.com/watch?v=bK6ldnjE3Y0&t=2s" role="button" target="blank"><img src="./src/play-fill 1.svg" alt="" class="watch-icon" > Watch</a>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Button Wrapper -->
+                            <div class="button-wrapper position-absolute end-0 top-50 translate-middle-y" id="button-wrapper1"></div>
+
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Carousel 2 -->
+                    <div class="carousel-inner carousel-product">
+                      <div class="carousel-item active">
+                        <!-- Product Card -->
+                        <div class="column d-flex justify-content-start col-12  position-relative me-3 ms-3 product-card-container">
+                            <!-- Tenet -->
+                            <div class="card bg-dark text-white col-lg-2 col-md-3 col-sm-4 col-4">
+                                <img src="src/tenet.png" class="card-img" alt="...">
+                                <div class="card-img-overlay d-flex align-items-end">
+                                    <div class="rate-label position-absolute end-0"> Action</div>
+                                    <div class="text-container position-absolute" >
+                                        <div class="info-icons">
+                                            <span class="info-label"> <img src="src/clock.svg" alt="">105 Minutes</span>
+                                            <span class="info-label"> <img src="src/eye.svg" alt="">12,7 K</span>
+                                        </div>
+                                        <h5 class="card-title col-12">Tenet</h5>
+                                        <span>
+                                            <button type="button" class="btn btn-warning btn-view col-5" data-bs-toggle="modal" data-bs-target="#exampleModal3">View</button>
+                                            <a class="btn btn-secondary btn-watch col-6" href="https://www.youtube.com/watch?v=bK6ldnjE3Y0&t=2s" role="button" target="blank"><img src="./src/play-fill 1.svg" alt="" class="watch-icon" > Watch</a>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Interstellar -->
+                            <div class="card bg-dark text-white col-lg-2 col-md-3 col-sm-4 col-4">
+                                <img src="src/regular-poster/interstellar-poster.png" class="card-img" alt="...">
+                                <div class="card-img-overlay d-flex align-items-end">
+                                    <div class="rate-label position-absolute end-0">Sci-fi</div>
+                                    <div class="text-container position-absolute" >
+                                        <div class="info-icons">
+                                            <span class="info-label"> <img src="src/clock.svg" alt="">125 Minutes</span>
+                                            <span class="info-label"> <img src="src/eye.svg" alt="">823K</span>
+                                        </div>
+                                        <h5 class="card-title col-12">Interstellar</h5>
+                                        <span>
+                                            <button type="button" class="btn btn-warning btn-view col-5" data-bs-toggle="modal" data-bs-target="#exampleModal1">View</button>
+                                            <a class="btn btn-secondary btn-watch col-6" href="https://www.youtube.com/watch?v=bK6ldnjE3Y0&t=2s" role="button" target="blank"><img src="./src/play-fill 1.svg" alt="" class="watch-icon" > Watch</a>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Dunkirk -->
+                            <div class="card bg-dark text-white col-lg-2 col-md-3 col-sm-4 col-4">
+                                <img src="src/regular-poster/Dunkirk-poster.png" class="card-img" alt="...">
+                                <div class="card-img-overlay d-flex align-items-end">
+                                    <div class="rate-label position-absolute end-0">Action</div>
+                                    <div class="text-container position-absolute" >
+                                        <div class="info-icons">
+                                            <span class="info-label"> <img src="src/clock.svg" alt="">114 Minutes</span>
+                                            <span class="info-label"> <img src="src/eye.svg" alt="">509 K</span>
+                                        </div>
+                                        <h5 class="card-title col-12">Dunkirk</h5>
+                                        <span>
+                                            <button type="button" class="btn btn-warning btn-view col-5" data-bs-toggle="modal" data-bs-target="#exampleModal2">View</button>
+                                            <a class="btn btn-secondary btn-watch col-6" href="https://www.youtube.com/watch?v=bK6ldnjE3Y0&t=2s" role="button" target="blank"><img src="./src/play-fill 1.svg" alt="" class="watch-icon" > Watch</a>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Prestige -->
+                            <div class="card bg-dark text-white col-lg-2 col-md-3 col-sm-4 col-4">
+                                <img src="src/regular-poster/prestige-poster.png" class="card-img" alt="...">
+                                <div class="card-img-overlay d-flex align-items-end">
+                                    <div class="rate-label position-absolute end-0">Drama</div>
+                                    <div class="text-container position-absolute" >
+                                        <div class="info-icons">
+                                            <span class="info-label"> <img src="src/clock.svg" alt="">121 Minutes</span>
+                                            <span class="info-label"> <img src="src/eye.svg" alt="">117 K</span>
+                                        </div>
+                                        <h5 class="card-title col-12">Prestige</h5>
+                                        <span>
+                                            <button type="button" class="btn btn-warning btn-view col-5" data-bs-toggle="modal" data-bs-target="#exampleModal3">View</button>
+                                            <a class="btn btn-secondary btn-watch col-6" href="https://www.youtube.com/watch?v=bK6ldnjE3Y0&t=2s" role="button" target="blank"><img src="./src/play-fill 1.svg" alt="" class="watch-icon" > Watch</a>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Oppenheimer -->
+                            <div class="card bg-dark text-white col-lg-2 col-md-3 col-sm-4 col-4">
+                                <img src="src/regular-poster/oppenheimer-poster.png" class="card-img" alt="...">
+                                <div class="card-img-overlay d-flex align-items-end">
+                                    <div class="rate-label position-absolute end-0">Drama</div>
+                                    <div class="text-container position-absolute" >
+                                        <div class="info-icons">
+                                            <span class="info-label"> <img src="src/clock.svg" alt="">131 Minutes</span>
+                                            <span class="info-label"> <img src="src/eye.svg" alt="">700k K</span>
+                                        </div>
+                                        <h5 class="card-title col-12">Oppenheimer</h5>
+                                        <span>
+                                            <button type="button" class="btn btn-warning btn-view col-5" data-bs-toggle="modal" data-bs-target="#exampleModal1">View</button>
+                                            <a class="btn btn-secondary btn-watch col-6" href="https://www.youtube.com/watch?v=bK6ldnjE3Y0&t=2s" role="button" target="blank"><img src="./src/play-fill 1.svg" alt="" class="watch-icon" > Watch</a>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Wolf of Wallstreet -->
+                            <div class="card bg-dark text-white col-lg-2 col-md-3 col-sm-4 col-4">
+                                <img src="src/regular-poster/wolf-wallstreet-poster.png" class="card-img" alt="...">
+                                <div class="card-img-overlay d-flex align-items-end">
+                                    <div class="rate-label position-absolute end-0">Comedy</div>
+                                    <div class="text-container position-absolute" >
+                                        <div class="info-icons">
+                                            <span class="info-label"> <img src="src/clock.svg" alt="">132 Minutes</span>
+                                            <span class="info-label"> <img src="src/eye.svg" alt="">1,3 M</span>
+                                        </div>
+                                        <h5 class="card-title col-12">Tenet</h5>
+                                        <span>
+                                            <button type="button" class="btn btn-warning btn-view col-5" data-bs-toggle="modal" data-bs-target="#exampleModal2">View</button>
+                                            <a class="btn btn-secondary btn-watch col-6" href="https://www.youtube.com/watch?v=bK6ldnjE3Y0&t=2s" role="button" target="blank"><img src="./src/play-fill 1.svg" alt="" class="watch-icon" > Watch</a>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Button Wrapper -->
+                            <div class="button-wrapper position-absolute end-0 top-50 translate-middle-y" id="button-wrapper2"></div>
+                            
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+
+
+
+            </div>
+        </section>
+
+        <!-- Coming Soon -->
+        <section id="coming-soon" class="mt-5 mb-5 overflow-hidden">
+            <div class="container-xl pb-4 pt-4">
+                <!-- Head -->
+                <div class="row mb-3 me-3 ms-3">
+                    <div class="col-9">
+                        <h5 id="section-head2"> 
+                            Coming Soon
+                        </h5>
+                    </div>
+                    <div class="col-3 d-flex justify-content-end">
+                        <button type="button" class="btn btn-warning">View</button>
+                    </div>
+                </div>
+
+                
+
+                <!-- Coming soon Card 1 -->
+                <div class="column d-flex position-relative me-3 ms-3 row carousel-soon">
+                    <!-- Carousel Baru -->
+                    <div id="carouselExampleControls2" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner carousel-soon">
+                            <!-- Carousel 1 -->
+                            <div class="carousel-item active">
+                                <div class="header-wow">
+                                    <div class="row d-flex align-items-center header-content-soon color-overlay">
+                                        <!-- Description -->
+                                        <div class="header-description col-lg-4 col-sm-12">
+                                            <h1 class="mb-4
+                                            ">The Wolf Of Wallstreet</h1>
+                                            <div class="info-icons mb-4">
+                                                <span class="rate-label-header"> Drama </span>
+                                                <span class="info-label-header"> <img src="src/clock.svg" alt="">130 Minutes</span>
+                                                <span class="info-label-header"> <img src="src/eye.svg" alt="">800 K</span>
+                                            </div>
+                                            <p class="mb-4">Based on the true story of Jordan Belfort, from his rise to a wealthy stock-broker living the high life to his fall involving crime, corruption and the federal government.</p>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Carousel 2 -->
+                            <div class="carousel-item">
+                                <div class="header-inception">
+                                    <div class="row d-flex align-items-center header-content-soon color-overlay">
+                                        <!-- Description -->
+                                        <div class="header-description col-lg-4 col-sm-12">
+                                            <h1 class="mb-4
+                                            ">Inception</h1>
+                                            <div class="info-icons mb-4">
+                                                <span class="rate-label-header"> Sci-fi </span>
+                                                <span class="info-label-header"> <img src="src/clock.svg" alt="">121Minutes</span>
+                                                <span class="info-label-header"> <img src="src/eye.svg" alt="">346 K</span>
+                                            </div>
+                                            <p class="mb-4">A thief who steals corporate secrets through the use of dream-sharing technology is given the inverse task of planting an idea into the mind of a C.E.O., but his tragic past may doom the project and his team to disaster.</p>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls2" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                      </div>
+
+                </div>
+                
+
+                <!-- Coming soon Card 2 -->
+                <div class="column d-flex position-relative me-3 ms-3 coming-soon-hide">
+                    <!-- coming soon 1 -->
+                    <div class="card-container  col-3 coming-soon-hide">
+                        <div class="card bg-dark text-white">
+                        <img src="src/regular-poster/Creed.png" class="card-img" alt="...">
+                        <div class="card-img-overlay d-flex align-items-end">
+                            <div class="rate-label position-absolute end-0">Drama</div>
+                            <div class="text-container" >
+                                <div class="info-icons">
+                                    <span class="info-label"> <img src="src/clock.svg" alt="">105 Minutes</span>
+                                    <span class="info-label"> <img src="src/eye.svg" alt="">1M K</span>
+                                </div>
+                                <h5 class="card-title col-12">Creed III</h5>
+                                <span>
+                                    <button type="button" class="btn btn-warning btn-view col-5" data-bs-toggle="modal" data-bs-target="#exampleModal3">View</button>
+                                    <a class="btn btn-secondary btn-watch col-6" href="https://www.youtube.com/watch?v=bK6ldnjE3Y0&t=2s" role="button" target="blank"><img src="./src/play-fill 1.svg" alt="" class="watch-icon" > Watch</a>
+                                </span>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+
+                    <!-- coming soon 2 -->
+                    <div class="card-container  col-3 coming-soon-hide">
+                        <div class="card bg-dark text-white ">
+                        <img src="src/regular-poster/The Irishman.png" class="card-img" alt="...">
+                        <div class="card-img-overlay d-flex align-items-end">
+                            <div class="rate-label position-absolute end-0"> Action</div>
+                            <div class="text-container" >
+                                <div class="info-icons">
+                                    <span class="info-label"> <img src="src/clock.svg" alt="">105 Minutes</span>
+                                    <span class="info-label"> <img src="src/eye.svg" alt="">12,7 K</span>
+                                </div>
+                                <h5 class="card-title col-12">Irishman</h5>
+                                <span>
+                                    <button type="button" class="btn btn-warning btn-view col-5" data-bs-toggle="modal" data-bs-target="#exampleModal1">View</button>
+                                    <a class="btn btn-secondary btn-watch col-6" href="https://www.youtube.com/watch?v=bK6ldnjE3Y0&t=2s" role="button" target="blank"><img src="./src/play-fill 1.svg" alt="" class="watch-icon" > Watch</a>
+                                </span>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+
+                    <!-- coming soon 3 -->
+                    <div class="card-container  col-3 coming-soon-hide">
+                        <div class="card bg-dark text-white ">
+                        <img src="src/regular-poster/The Gray Man.png" class="card-img" alt="...">
+                        <div class="card-img-overlay d-flex align-items-end">
+                            <div class="rate-label position-absolute end-0"> Action</div>
+                            <div class="text-container" >
+                                <div class="info-icons">
+                                    <span class="info-label"> <img src="src/clock.svg" alt="">105 Minutes</span>
+                                    <span class="info-label"> <img src="src/eye.svg" alt="">12,7 K</span>
+                                </div>
+                                <h5 class="card-title col-12">The Gray Man</h5>
+                                <span>
+                                    <button type="button" class="btn btn-warning btn-view col-5" data-bs-toggle="modal" data-bs-target="#exampleModal2">View</button>
+                                    <a class="btn btn-secondary btn-watch col-6" href="https://www.youtube.com/watch?v=bK6ldnjE3Y0&t=2s" role="button" target="blank"><img src="./src/play-fill 1.svg" alt="" class="watch-icon" > Watch</a>
+                                </span>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+
+                    <!-- coming soon 4 -->
+                    <div class="card-container  col-3 coming-soon-hide ">
+                        <div class="card bg-dark text-white">
+                        <img src="src/regular-poster/The Last Of Us.png" class="card-img" alt="...">
+                        <div class="card-img-overlay d-flex align-items-end">
+                            <div class="rate-label position-absolute end-0"> Action</div>
+                            <div class="text-container" >
+                                <div class="info-icons">
+                                    <span class="info-label"> <img src="src/clock.svg" alt="">105 Minutes</span>
+                                    <span class="info-label"> <img src="src/eye.svg" alt="">12,7 K</span>
+                                </div>
+                                <h5 class="card-title col-12">The Last Of Us</h5>
+                                <span>
+                                    <button type="button" class="btn btn-warning btn-view col-5" data-bs-toggle="modal" data-bs-target="#exampleModal3">View</button>
+                                    <a class="btn btn-secondary btn-watch col-6" href="https://www.youtube.com/watch?v=bK6ldnjE3Y0&t=2s" role="button" target="blank"><img src="./src/play-fill 1.svg" alt="" class="watch-icon" > Watch</a>
+                                </span>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- On Cinema -->
+        <section id="on-cinema" class="mt-5 mb-5 overflow-hidden">
+            <div class="container-xl pb-4 pt-4">
+                <!-- Head -->
+                <div class="row mb-3 me-3 ms-3">
+                    <div class="col-9">
+                        <h5 id="section-head3"> 
+                            On Cinema
+                        </h5>
+                    </div>
+                    <div class="col-3 d-flex justify-content-end">
+                        <button type="button" class="btn btn-warning">View</button>
+                    </div>
+                </div>
+                <!-- On Cinema Card 1 -->
+                <div class="column d-flex position-relative me-3 ms-3">
+                    <!--On Cinema Horizontal-->
+                    <div class="col-sm-12 mb-2 on-cinema-card">
+                        <div class=" card bg-dark text-white card-horizontal giant-card ">
+                            <div class="video-container">
+                                <video src="/src/videoplayback - Trim.mp4" autoplay muted loop style="max-width: 100%;" class="video-autoplay"></video>
+                              </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Product Card -->
+                <div class="column d-flex justify-content-start col-12  position-relative me-3 ms-3 product-card-container">
+                    <!-- Tenet -->
+                    <div class="card bg-dark text-white col-lg-2 col-md-3 col-sm-4 col-4">
+                        <img src="src/regular-poster/dark-knight-poster.png" class="card-img" alt="...">
+                        <div class="card-img-overlay d-flex align-items-end">
+                            <div class="rate-label position-absolute end-0">Action</div>
+                            <div class="text-container position-absolute" >
+                                <div class="info-icons">
+                                    <span class="info-label"> <img src="src/clock.svg" alt="">122 Minutes</span>
+                                    <span class="info-label"> <img src="src/eye.svg" alt="">2,2 M</span>
+                                </div>
+                                <h5 class="card-title col-12">Dark Knight</h5>
+                                <span>
+                                    <button type="button" class="btn btn-warning btn-view col-5" data-bs-toggle="modal" data-bs-target="#exampleModal1">View</button>
+                                    <a class="btn btn-secondary btn-watch col-6" href="https://www.youtube.com/watch?v=bK6ldnjE3Y0&t=2s" role="button" target="blank"><img src="./src/play-fill 1.svg" alt="" class="watch-icon" > Watch</a>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Interstellar -->
+                    <div class="card bg-dark text-white col-lg-2 col-md-3 col-sm-4 col-4">
+                        <img src="src/regular-poster/dark-knight-rises-poster.png" class="card-img" alt="...">
+                        <div class="card-img-overlay d-flex align-items-end">
+                            <div class="rate-label position-absolute end-0">Action</div>
+                            <div class="text-container position-absolute" >
+                                <div class="info-icons">
+                                    <span class="info-label"> <img src="src/clock.svg" alt="">105 Minutes</span>
+                                    <span class="info-label"> <img src="src/eye.svg" alt="">12,7 K</span>
+                                </div>
+                                <h5 class="card-title col-12">Dark Knight Rises</h5>
+                                <span>
+                                    <button type="button" class="btn btn-warning btn-view col-5" data-bs-toggle="modal" data-bs-target="#exampleModal2">View</button>
+                                    <a class="btn btn-secondary btn-watch col-6" href="https://www.youtube.com/watch?v=bK6ldnjE3Y0&t=2s" role="button" target="blank"><img src="./src/play-fill 1.svg" alt="" class="watch-icon" > Watch</a>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tenet -->
+                    <div class="card bg-dark text-white col-lg-2 col-md-3 col-sm-4 col-4">
+                        <img src="src/tenet.png" class="card-img" alt="...">
+                        <div class="card-img-overlay d-flex align-items-end">
+                            <div class="rate-label position-absolute end-0"> Action</div>
+                            <div class="text-container position-absolute" >
+                                <div class="info-icons">
+                                    <span class="info-label"> <img src="src/clock.svg" alt="">105 Minutes</span>
+                                    <span class="info-label"> <img src="src/eye.svg" alt="">12,7 K</span>
+                                </div>
+                                <h5 class="card-title col-12">Tenet</h5>
+                                <span>
+                                    <button type="button" class="btn btn-warning btn-view col-5" data-bs-toggle="modal" data-bs-target="#exampleModal3">View</button>
+                                    <a class="btn btn-secondary btn-watch col-6" href="https://www.youtube.com/watch?v=bK6ldnjE3Y0&t=2s" role="button" target="blank"><img src="./src/play-fill 1.svg" alt="" class="watch-icon" > Watch</a>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Revenant -->
+                    <div class="card bg-dark text-white col-lg-2 col-md-3 col-sm-4 col-4">
+                        <img src="src/regular-poster/revenant-poster.png" class="card-img" alt="...">
+                        <div class="card-img-overlay d-flex align-items-end">
+                            <div class="rate-label position-absolute end-0">Drama</div>
+                            <div class="text-container position-absolute" >
+                                <div class="info-icons">
+                                    <span class="info-label"> <img src="src/clock.svg" alt="">132 Minutes</span>
+                                    <span class="info-label"> <img src="src/eye.svg" alt="">2 M</span>
+                                </div>
+                                <h5 class="card-title col-12">Revenant</h5>
+                                <span>
+                                    <button type="button" class="btn btn-warning btn-view col-5" data-bs-toggle="modal" data-bs-target="#exampleModal1">View</button>
+                                    <a class="btn btn-secondary btn-watch col-6" href="https://www.youtube.com/watch?v=bK6ldnjE3Y0&t=2s" role="button" target="blank"><img src="./src/play-fill 1.svg" alt="" class="watch-icon" > Watch</a>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Inception -->
+                    <div class="card bg-dark text-white col-lg-2 col-md-3 col-sm-4 col-4">
+                        <img src="src/regular-poster/inception-poster.png" class="card-img" alt="...">
+                        <div class="card-img-overlay d-flex align-items-end">
+                            <div class="rate-label position-absolute end-0">Action</div>
+                            <div class="text-container position-absolute" >
+                                <div class="info-icons">
+                                    <span class="info-label"> <img src="src/clock.svg" alt="">124 Minutes</span>
+                                    <span class="info-label"> <img src="src/eye.svg" alt="">600 K</span>
+                                </div>
+                                <h5 class="card-title col-12">Inception</h5>
+                                <span>
+                                    <button type="button" class="btn btn-warning btn-view col-5" data-bs-toggle="modal" data-bs-target="#exampleModal2">View</button>
+                                    <a class="btn btn-secondary btn-watch col-6" href="https://www.youtube.com/watch?v=bK6ldnjE3Y0&t=2s" role="button" target="blank"><img src="./src/play-fill 1.svg" alt="" class="watch-icon" > Watch</a>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Wolf of Wallstreet -->
+                    <div class="card bg-dark text-white col-lg-2 col-md-3 col-sm-4 col-4">
+                        <img src="src/tenet.png" class="card-img" alt="...">
+                        <div class="card-img-overlay d-flex align-items-end">
+                            <div class="rate-label position-absolute end-0"> Action</div>
+                            <div class="text-container position-absolute" >
+                                <div class="info-icons">
+                                    <span class="info-label"> <img src="src/clock.svg" alt="">105 Minutes</span>
+                                    <span class="info-label"> <img src="src/eye.svg" alt="">12,7 K</span>
+                                </div>
+                                <h5 class="card-title col-12">Tenet</h5>
+                                <span>
+                                    <button type="button" class="btn btn-warning btn-view col-5" data-bs-toggle="modal" data-bs-target="#exampleModal3">View</button>
+                                    <a class="btn btn-secondary btn-watch col-6" href="https://www.youtube.com/watch?v=bK6ldnjE3Y0&t=2s" role="button" target="blank"><img src="./src/play-fill 1.svg" alt="" class="watch-icon" > Watch</a>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Button Wrapper -->
+                    <div class="button-wrapper position-absolute end-0 top-50 translate-middle-y" id="button-wrapper3"></div>
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- Footer -->
+        <footer class="bg-dark text-white" >
+            <div class="container-fluid px-5 py-5" id="footeratas">
+                <!-- Baris pertama -->
+              <div id="barisPertama" class="row">
+                <!-- Kolom 1 -->
+                <div id="kolom1" class="col-md-3">
+                    <img src="/src/logo/logo.png" alt="">
+                  <p>Informasi tentang film terbaru dan film paling populer di box office worldwide.</p>
+                </div>
+                <!-- Kolom 3 -->
+                <div id="kolom3" class="col-md-3">
+                  
+                </div>
+                <!-- Kolom 2 -->
+                <div id="kolom2" class="col-md-3">
+                  <h5>About OnFlix</h5>
+                  <ul class="list-unstyled">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="/contact-us.html">Contact Us</a></li>
+                    <li><a href="#watch-list">Watch List</a></li>
+                    <li><a data-bs-toggle="modal" data-bs-target="#signInModal">Log In</a></li>
+                  </ul>
+                </div>
+                <!-- Kolom4 -->
+                <div id="kolom4" class="col-md-3">
+                  <h5>Follow Me</h5>
+                  <ul class="list-unstyled">
+                    <li><a href="https://dribbble.com/arteroid"> <img src="/src/sosmed icons/dribbble.svg" alt=""> Dribbble</a></li>
+                    <li><a href="https://www.behance.net/ilhamsyahzp"> <img src="/src/sosmed icons/behance.svg" alt=""> Behance</a></li>
+                    <li><a href="https://github.com/ilhamsyahputraaa"> <img src="/src/sosmed icons/github.svg" alt=""> Github</a></li>
+                    <li><a href="https://www.instagram.com/ilhamsyahzp/"> <img src="/src/sosmed icons/instagram.svg" alt=""> Instagram</a></li>
+                    <li><a href="https://www.linkedin.com/feed/"> <img src="/src/sosmed icons/linkedin.svg" alt="">LinkedIn</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- Baris kedua -->
+            <div class="container-fluid bg-secondary py-3">
+              <div class="container text-center">
+                <p class="mb-0">&copy; Ilhamsyah Putra. All rights reserved.</p>
+              </div>
+            </div>
+        </footer>
+          
+
+
+
+    </div>
+
+
+    <!-- Modal 1-->
+    <div class="modal modal-lg fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-body">
+              
+              <!-- Header Img -->
+              <div class="position-relative">
+                <div class="landscapePosterOverlay"><button type="button" class="btn-close end-0" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="container-fluid d-flex container-landscape-poster">
+                    <img src="./src/Poster-landscape/Interstellar-landscape.png" alt="" class="landscape-poster">
+                </div>
+              </div>
+              <div class="container-fluid d-flex modal-content-container">
+                <div id="modal-content-container" class="container-fluid d-flex">
+                    <!-- Container 1 : Poster -->
+                <div class="col-5 modal-regular-poster-container">
+                    <img src="./src/regular-poster/interstellar-poster.png" alt="" class="regular-poster-modal " style="border-radius: 1.5rem;">
+                </div>
+                <!-- Container 2 : Description -->
+                <div class="col-7 modal-description">
+                    <img src="./src/regular-poster/interstellar-poster.png" alt="" class="regular-poster-modal " style="border-radius: 1.5rem;">
+                    <h1 id="modal-title">interstellar</h1>
+                    <span >
+                        <span class="info-label-modal"> <img src="src/clock.svg" alt="">105 Minutes</span>
+                        <span class="info-label-modal"> <img src="src/eye.svg" alt="">12,7 K</span>
+                    </span>
+                    <span>
+                        <span><a class="btn btn-secondary col-6 btn-view-modal" href="https://www.youtube.com/watch?v=Lm8p5rlrSkY" role="button" target="blank"><img src="./src/play-fill 1.svg" alt="" class="watch-icon" > Watch</a>
+                        </span>
+                        
+                        <button type="button" class="btn btn-secondary btn-stroke"> <img src="./src/heart 1.svg" alt="" class="watch-icon"></button>
+                        <button type="button" class="btn btn-secondary btn-stroke"> <img src="./src/share-fill 1.svg" alt="" class="watch-icon"></button>
+
+                    </span>
+                    <p>A team of explorers travel through a wormhole in space in an attempt to ensure humanity's survival.</p>
+                    <div id="genres">
+                        <span class="rate-label-modal"> Science Fiction</span>
+                        <span class="rate-label-modal"> Drama</span>
+                        <span class="rate-label-modal"> Action</span>
+
+
+                    </div>
+                    <div class="cast-soon">
+                        <h6>Cast & Director</h6>
+                        <div class="cast-soon-container col-12 d-flex gap-4">
+                            <!-- Cast 1 -->
+                            <div class="actor-profile-container d-flex row col-2
+                            ">
+                                <div>
+                                    <img src="./src/profile-actor/christoper Nolan.png" alt="" class="actor-profile">
+                                </div>
+                                <div>
+                                    <h6  class="actor-name-soon">Christoper Nolan</h6>
+                                    <span class="profile-description">Director</span>
+                                </div>
+                            </div>
+                            <!-- Cast 1 -->
+                            <div class="actor-profile-container d-flex row col-2">
+                                <div>
+                                    <img src="./src/profile-actor/Mattew McConeghey.png" alt="" class="actor-profile">
+                                </div>
+                                <div>
+                                    <h6  class="actor-name-soon">Matthew McConeghey</h6>
+                                    <span class="profile-description">Cooper</span>
+                                </div>
+                            </div>
+                            <!-- Cast 1 -->
+                            <div class="actor-profile-container d-flex row col-2
+                            ">
+                                <div>
+                                    <img src="./src/profile-actor/Anne Hathaway.png" alt="" class="actor-profile">
+                                </div>
+                                <div>
+                                    <h6  class="actor-name-soon">Anne Hathaway</h6>
+                                    <span class="profile-description">Brand</span>
+                                </div>
+                            </div>
+                            <!-- Cast 1 -->
+                            <div class="actor-profile-container d-flex row col-2">
+                                <div>
+                                    <img src="./src/profile-actor/Jessica Chastain.png" alt="" class="actor-profile">
+                                </div>
+                                <div>
+                                    <h6  class="actor-name-soon">Jessica Chastain</h6>
+                                    <span class="profile-description">Murph</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <span>
+                    </span>
+                </div>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+
+
+    <!-- Modal 2-->
+    <div class="modal modal-lg fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-body">
+              
+              <!-- Header Img -->
+              <div class="position-relative">
+                <div class="landscapePosterOverlay"><button type="button" class="btn-close end-0" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="container-fluid d-flex container-landscape-poster">
+                    <img src="./src/Poster-landscape/Dunkirk-landscape.png" alt="" class="landscape-poster">
+                </div>
+              </div>
+              <div class="container-fluid d-flex modal-content-container">
+                <div id="modal-content-container" class="container-fluid d-flex">
+                    <!-- Container 1 : Poster -->
+                <div class="col-5 modal-regular-poster-container">
+                    <img src="./src/regular-poster/Dunkirk-poster.png" alt="" class="regular-poster-modal " style="border-radius: 1.5rem;">
+                </div>
+                <!-- Container 2 : Description -->
+                <div class="col-7 modal-description">
+                    <img src="./src/regular-poster/Dunkirk-poster.png" alt="" class="regular-poster-modal " style="border-radius: 1.5rem;">
+                    <h1 id="modal-title">Dunkirk</h1>
+                    <span >
+                        <span class="info-label-modal"> <img src="src/clock.svg" alt="">116 Minutes</span>
+                        <span class="info-label-modal"> <img src="src/eye.svg" alt="">32M</span>
+                    </span>
+                    <span>
+                        <span><a class="btn btn-secondary col-6 btn-view-modal" href="https://www.youtube.com/watch?v=T7O7BtBnsG4" role="button" target="blank"><img src="./src/play-fill 1.svg" alt="" class="watch-icon" > Watch</a>
+                        </span>
+                        
+                        <button type="button" class="btn btn-secondary btn-stroke"> <img src="./src/heart 1.svg" alt="" class="watch-icon"></button>
+                        <button type="button" class="btn btn-secondary btn-stroke"> <img src="./src/share-fill 1.svg" alt="" class="watch-icon"></button>
+
+                    </span>
+                    <p>Allied soldiers from Belgium, the British Commonwealth and Empire, and France are surrounded by the German Army and evacuated during a fierce battle in World War II.</p>
+                    <div id="genres">
+                        <span class="rate-label-modal"> War </span>
+                        <span class="rate-label-modal"> Drama</span>
+                        <span class="rate-label-modal"> Action</span>
+                        <span class="rate-label-modal"> History</span>
+
+
+                    </div>
+                    <div class="cast-soon">
+                        <h6>Cast & Director</h6>
+                        <div class="cast-soon-container col-12 d-flex gap-4">
+                            <!-- Cast 1 -->
+                            <div class="actor-profile-container d-flex row col-2
+                            ">
+                                <div>
+                                    <img src="./src/profile-actor/christoper Nolan.png" alt="" class="actor-profile">
+                                </div>
+                                <div>
+                                    <h6  class="actor-name-soon">Christoper Nolan</h6>
+                                    <span class="profile-description">Director</span>
+                                </div>
+                            </div>
+                            <!-- Cast 1 -->
+                            <div class="actor-profile-container d-flex row col-2">
+                                <div>
+                                    <img src="./src/profile-actor/Flonn Whitehead.png" alt="" class="actor-profile">
+                                </div>
+                                <div>
+                                    <h6  class="actor-name-soon">Fionn Whitehead</h6>
+                                    <span class="profile-description">Tommy</span>
+                                </div>
+                            </div>
+                            <!-- Cast 1 -->
+                            <div class="actor-profile-container d-flex row col-2
+                            ">
+                                <div>
+                                    <img src="./src/profile-actor/Barry Keoghan.png" alt="" class="actor-profile">
+                                </div>
+                                <div>
+                                    <h6  class="actor-name-soon">Barry Keoghan</h6>
+                                    <span class="profile-description">George</span>
+                                </div>
+                            </div>
+                            <!-- Cast 1 -->
+                            <div class="actor-profile-container d-flex row col-2">
+                                <div>
+                                    <img src="./src/profile-actor/Tom Hardy.png" alt="" class="actor-profile">
+                                </div>
+                                <div>
+                                    <h6  class="actor-name-soon">Tom Hardy</h6>
+                                    <span class="profile-description">Farrier</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <span>
+                    </span>
+                </div>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <!-- Modal 2-->
+    <div class="modal modal-lg fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-body">
+              
+              <!-- Header Img -->
+              <div class="position-relative">
+                <div class="landscapePosterOverlay"><button type="button" class="btn-close end-0" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="container-fluid d-flex container-landscape-poster">
+                    <img src="./src/Poster-landscape/Oppenheimer-landscape.png" alt="" class="landscape-poster">
+                </div>
+              </div>
+              <div class="container-fluid d-flex modal-content-container">
+                <div id="modal-content-container" class="container-fluid d-flex">
+                    <!-- Container 1 : Poster -->
+                <div class="col-5 modal-regular-poster-container">
+                    <img src="./src/regular-poster/oppenheimer-poster.png" alt="" class="regular-poster-modal " style="border-radius: 1.5rem;">
+                </div>
+                <!-- Container 2 : Description -->
+                <div class="col-7 modal-description">
+                    <img src="./src/regular-poster/oppenheimer-poster.png" alt="" class="regular-poster-modal " style="border-radius: 1.5rem;">
+                    <h1 id="modal-title">Oppenheimer</h1>
+                    <span >
+                        <span class="info-label-modal"> <img src="src/clock.svg" alt="">123 Minutes</span>
+                        <span class="info-label-modal"> <img src="src/eye.svg" alt="">43 M</span>
+                    </span>
+                    <span>
+                        <span>
+                            <a class="btn btn-secondary col-6 btn-view-modal" href="https://www.youtube.com/watch?v=bK6ldnjE3Y0&t=2s" role="button" target="blank"><img src="./src/play-fill 1.svg" alt="" class="watch-icon" > Watch</a>
+                        </span>
+                        
+                        <button type="button" class="btn btn-secondary btn-stroke"> <img src="./src/heart 1.svg" alt="" class="watch-icon"></button>
+                        <button type="button" class="btn btn-secondary btn-stroke"> <img src="./src/share-fill 1.svg" alt="" class="watch-icon"></button>
+
+                    </span>
+                    <p>The story of American scientist J. Robert Oppenheimer and his role in the development of the atomic bomb.</p>
+                    <div id="genres">
+                        <span class="rate-label-modal"> Biography</span>
+                        <span class="rate-label-modal"> Drama</span>
+                        <span class="rate-label-modal"> Action</span>
+
+
+                    </div>
+                    <div class="cast-soon">
+                        <h6>Cast & Director</h6>
+                        <div class="cast-soon-container col-12 d-flex gap-4">
+                            <!-- Cast 1 -->
+                            <div class="actor-profile-container d-flex row col-2
+                            ">
+                                <div>
+                                    <img src="./src/profile-actor/christoper Nolan.png" alt="" class="actor-profile">
+                                </div>
+                                <div>
+                                    <h6  class="actor-name-soon">Christoper Nolan</h6>
+                                    <span class="profile-description">Director</span>
+                                </div>
+                            </div>
+                            <!-- Cast 1 -->
+                            <div class="actor-profile-container d-flex row col-2">
+                                <div>
+                                    <img src="./src/profile-actor/Cillian Murphy.png" alt="" class="actor-profile">
+                                </div>
+                                <div>
+                                    <h6  class="actor-name-soon">Cillian Murphy</h6>
+                                    <span class="profile-description">Robert Oppenheimer</span>
+                                </div>
+                            </div>
+                            <!-- Cast 1 -->
+                            <div class="actor-profile-container d-flex row col-2
+                            ">
+                                <div>
+                                    <img src="./src/profile-actor/Emily Blunt.png" alt="" class="actor-profile">
+                                </div>
+                                <div>
+                                    <h6  class="actor-name-soon">Emily Blunt</h6>
+                                    <span class="profile-description">Kitty Oppenheimer</span>
+                                </div>
+                            </div>
+                            <!-- Cast 1 -->
+                            <div class="actor-profile-container d-flex row col-2">
+                                <div>
+                                    <img src="./src/profile-actor/Matt Damon.png" alt="" class="actor-profile">
+                                </div>
+                                <div>
+                                    <h6  class="actor-name-soon">Matt Damon</h6>
+                                    <span class="profile-description">Leslie Groves</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <span>
+                    </span>
+                </div>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    
+
+    <!-- Log In Modal -->
+    <div class="modal fade" id="signInModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog signin-modal">
+            <div class="modal-content ">
+                <div class="modal-body-sign">
+                    
+                    <div class="signin">
+                        <button type="button" class="btn-close btn-close-signin-modal" data-bs-dismiss="modal" aria-label="Close"></button>
+                            <div class="head-item"><img src="/src/logo/logo.png" alt="" style="width: 200px">
+                              <div style="color: white;"><p>Selamat datang di OnFlix. Untuk mengakses Fitur lebih banyak, silahkan untuk melakukan log in menggunakan email dan password yang sudah terdaftar.</p></div>
+                            </div>
+                            
+                            <div class="col-12 d-flex form-contact">
+                                <form class="row g-3 form-content" style="color: white;">
+                                <!-- Email-->
+                                <div>
+                                    <label for="inputEmail4" class="form-label">Email</label>
+                                    <input type="email" class="form-control" id="inputEmail4">
+                                </div>
+                        
+                                    <!-- Password -->
+                                <div>
+                                    <label for="inputPassword4" class="form-label">Passwprd</label>
+                                    <input type="password" class="form-control" id="inputPassword4">
+                                </div>
+                        
+                                <!-- Checkbox -->
+                                <div class="col-12">
+                                    <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="gridCheck">
+                                    <label class="form-check-label" for="gridCheck">
+                                        Keep Me Sign In
+                                    </label>
+                                    </div>
+                                </div>
+                                
+                                </form>
+                            </div>
+                            <div class="d-flex flex-column mt_24 gap-2 col-12">
+                                <button type="button" class="btn btn-warning" data-bs-toggle="modal">Log In</button>
+                                <div class="mb-1 mt-1" style="text-align: center; color: white;">
+                                    Or
+                                </div>
+                                <button type="button" class="btn btn-light btn_sosmed">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-google" viewBox="0 0 16 16">
+                                        <path d="M15.545 6.558a9.42 9.42 0 0 1 .139 1.626c0 2.434-.87 4.492-2.384 5.885h.002C11.978 15.292 10.158 16 8 16A8 8 0 1 1 8 0a7.689 7.689 0 0 1 5.352 2.082l-2.284 2.284A4.347 4.347 0 0 0 8 3.166c-2.087 0-3.86 1.408-4.492 3.304a4.792 4.792 0 0 0 0 3.063h.003c.635 1.893 2.405 3.301 4.492 3.301 1.078 0 2.004-.276 2.722-.764h-.003a3.702 3.702 0 0 0 1.599-2.431H8v-3.08h7.545z"/>
+                                    </svg>
+                                    Continue With Google</button>
+                                <button type="button" class="btn btn-light btn_sosmed">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                                        <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+                                    </svg>
+                                    Continue With Facebook</button>
+                                <button type="button" class="btn btn-light btn_sosmed">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-apple" viewBox="0 0 16 16">
+                                        <path d="M11.182.008C11.148-.03 9.923.023 8.857 1.18c-1.066 1.156-.902 2.482-.878 2.516.024.034 1.52.087 2.475-1.258.955-1.345.762-2.391.728-2.43Zm3.314 11.733c-.048-.096-2.325-1.234-2.113-3.422.212-2.189 1.675-2.789 1.698-2.854.023-.065-.597-.79-1.254-1.157a3.692 3.692 0 0 0-1.563-.434c-.108-.003-.483-.095-1.254.116-.508.139-1.653.589-1.968.607-.316.018-1.256-.522-2.267-.665-.647-.125-1.333.131-1.824.328-.49.196-1.422.754-2.074 2.237-.652 1.482-.311 3.83-.067 4.56.244.729.625 1.924 1.273 2.796.576.984 1.34 1.667 1.659 1.899.319.232 1.219.386 1.843.067.502-.308 1.408-.485 1.766-.472.357.013 1.061.154 1.782.539.571.197 1.111.115 1.652-.105.541-.221 1.324-1.059 2.238-2.758.347-.79.505-1.217.473-1.282Z"/>
+                                        <path d="M11.182.008C11.148-.03 9.923.023 8.857 1.18c-1.066 1.156-.902 2.482-.878 2.516.024.034 1.52.087 2.475-1.258.955-1.345.762-2.391.728-2.43Zm3.314 11.733c-.048-.096-2.325-1.234-2.113-3.422.212-2.189 1.675-2.789 1.698-2.854.023-.065-.597-.79-1.254-1.157a3.692 3.692 0 0 0-1.563-.434c-.108-.003-.483-.095-1.254.116-.508.139-1.653.589-1.968.607-.316.018-1.256-.522-2.267-.665-.647-.125-1.333.131-1.824.328-.49.196-1.422.754-2.074 2.237-.652 1.482-.311 3.83-.067 4.56.244.729.625 1.924 1.273 2.796.576.984 1.34 1.667 1.659 1.899.319.232 1.219.386 1.843.067.502-.308 1.408-.485 1.766-.472.357.013 1.061.154 1.782.539.571.197 1.111.115 1.652-.105.541-.221 1.324-1.059 2.238-2.758.347-.79.505-1.217.473-1.282Z"/>
+                                    </svg>Continue With Apple</button>
+                            </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+      
+
+  <script src="./script.js"></script>
+</body>
+
+</html>

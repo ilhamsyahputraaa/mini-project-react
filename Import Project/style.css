@@ -1,0 +1,950 @@
+/* Universal Selector */
+*{
+    font-family: 'Inter', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+    padding: 0;
+    margin: 0;
+}
+
+
+h5{
+    color: white;
+}
+
+body{
+    background-color: #1a1a1a;
+}
+
+p{
+    font-weight: 400;
+}
+
+/* ==================================== */
+
+/* Navbar */
+
+.nav-color {
+    background-color: rgb(109, 109, 109);
+    z-index: 5;
+    transition-duration: 0.3s;
+    backdrop-filter: blur(15.5px);
+    background: linear-gradient(61.9deg, #131313 -1.06%, rgba(48, 48, 48, 0.56) 97.06%);
+    box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.637);
+    height: 5rem;
+
+}
+
+.nav-transparent{
+    background-color: rgba(39, 39, 39, 0.274);
+    transition-duration: 0.3s;
+    height: 5rem;
+    backdrop-filter: blur(5px);
+}
+
+
+.navbar{
+    margin-bottom: -90px;
+    z-index: 5;
+    padding: 0px 5rem;
+}
+
+
+
+.nav-link{
+    color: rgb(206, 206, 206);
+}
+
+.nav-active{
+    color: white;
+    font-weight: 700;
+}
+
+.navbar-nav{
+    display: flex;
+    gap: 2rem;
+}
+
+
+/* ==================================== */
+
+
+/* Alert */
+.alert-success{
+    margin: 64px;
+
+}
+
+/* Header */
+.header-content {
+    height: 100vh;
+    padding: 5rem;
+}
+
+.header-tenet {
+    background-image: url('./src/poster-header/Oppenheimer-header.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    align-items: end;
+    justify-content: start;
+    height: 80vh;
+}
+
+.header-dunkirk {
+    background-image: url('./src/poster-header/Dunkirk-header.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    align-items: end;
+    justify-content: start;
+    height: 80vh;
+}
+
+.btn-watch-header a{
+text-decoration: none;
+}
+
+.header-inter {
+    background-image: url('./src/poster-header/Interstellar-header.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    align-items: end;
+    justify-content: start;
+    height: 80vh;
+}
+
+.color-overlay{
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(72.43deg, #000000 -0.22%, rgba(39, 39, 39, 0.718807) 25.03%, rgba(52, 52, 52, 0.456944) 45.68%, rgba(74, 74, 74, 0) 61.95%);
+
+}
+
+.info-label-header {
+    font-size: 0.8rem;
+    margin-right: 16px;
+    color: rgb(231, 231, 231);
+    font-weight: 700;
+}
+.rate-label-header {
+    background-color: #F8D13B;
+    color: rgb(37, 37, 37);
+    padding: 2px 8px;
+    border-radius: 50px;
+    font-size: 0.8rem;
+    margin-right: 16px;
+}
+.info-label-header img {
+    margin-right: 4px;
+    color: rgb(255, 255, 255);
+}
+
+.card:hover .info-label-header {
+    transition-duration: 1.5s;
+}
+
+
+
+.header-description{
+    padding: 2rem;
+    /* background: linear-gradient(61.9deg, #393939 -1.06%, rgba(74, 74, 74, 0.56) 97.06%); */
+    /* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); */
+    /* backdrop-filter: blur(15.5px); */
+    width: 40vw;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    border-radius: 0.5rem;
+}
+
+.header-description p{
+    font-size: 1.2rem;
+    color: white;
+}
+
+.header-description h1{
+    font-size: 3rem;
+    color: white;
+}
+
+.header-poster-container{
+    padding: 2rem;
+    width: 40vw;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-poster{
+    width: 25rem;
+    align-items: center;
+    border-radius: 0.5rem;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.418);
+}
+/* ==================================== */
+
+/* Card Slider */
+.btn-arrow-right {
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    background-color: #F8D13B;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.watch-list-slider {
+    overflow: hidden;
+}
+
+.button-wrapper {
+    height: 100%;
+    display: flex;
+    align-items: end;
+    padding: 64px;
+    /* margin-right: -32px; */
+    justify-content: end;
+}
+
+/* ==================================== */
+
+/* Card */
+
+.product-card-container{
+    gap: 1rem;
+    overflow-y: visible;
+    overflow-x: hidden;
+    padding: 3rem 1rem;
+}
+
+.carousel-product {
+    overflow-y: visible;
+}
+
+.carousel-item{
+    overflow-y: visible;
+}
+
+
+
+.card {
+    overflow: hidden;
+    border-radius: 10px;
+    scale: 100%;
+    border: 0;
+    padding: 0;
+}
+
+.card:hover {
+    scale: 110%;
+    transition-duration: .5s;
+    z-index: 2;
+    border: 0;
+    padding: 0;
+    box-shadow: 0px 10px 40px 15px rgba(0, 0, 0, 0.575);
+}
+
+.rate-label {
+    top: 16px;
+    margin-inline-end: 16px;
+    background-color: #F8D13B;
+    color: rgb(37, 37, 37);
+    padding: 2px 8px;
+    border-radius: 50px;
+    font-size: 10px;
+    font-weight: 500;
+}
+
+/* Giant Card */
+.giant-card {
+    overflow: hidden;
+    border-radius: 10px;
+    scale: 100%;
+}
+
+.giant-card:hover {
+    transition-duration: .5s;
+    z-index: 2;
+    scale: 100%;
+}
+
+.on-cinema-card{
+    height: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    border-radius: 1rem;
+}
+
+.video-autoplay{
+    width: 100vw;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+/* Card Image */
+.card-img-overlay {
+    padding: 0;
+}
+
+.card-img {
+    transition-duration: .5s;
+    scale: 105%;
+}
+
+.card:hover .card-img {
+    transform: scale(120%);
+    transition-duration: 0.5s;
+}
+
+.card:hover .card-img-overlay {
+    transition-duration: 0.5s;
+    padding: 0;
+}
+
+
+
+/* Text Container */
+.text-container {
+    width: 100%;
+    padding: 0.8rem;
+    transition-duration: 0.5s;
+    background: linear-gradient(0deg, #050505 6.31%, rgba(12, 12, 12, 0.041) 100%);
+    backdrop-filter: blur(.5px);
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    margin-bottom: -2.5em;
+}
+
+.card:hover .text-container {
+    background: linear-gradient(0deg, #494949 20.31%, rgba(61, 61, 61, 0) 100%);
+    backdrop-filter: blur(10px);
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    margin-bottom: 0px;
+}
+
+
+
+/* Text Container : Button View */
+.btn-view {
+    /* display: none; */
+    opacity: 0;
+    font-size: .7rem;
+}
+
+.watch-icon{
+    width: 1rem;
+}
+.btn-watch {
+    /* display: none; */
+    opacity: 0;
+    font-size: .7rem;
+}
+
+.card:hover .btn-view  {
+    /* display: block; */
+    transition-duration: 1s;
+    opacity: 1;
+}
+
+.card:hover .btn-watch {
+    /* display: block; */
+    transition-duration: 1s;
+    opacity: 1;
+}
+
+
+
+/* Text Container : Info Label & Card title */
+.info-label {
+    opacity: 0;
+    font-size: 0.5rem;
+    margin-right: 8px;
+    color: rgb(231, 231, 231);
+    font-weight: 700;
+}
+
+.card-title {
+    opacity: 0;
+    font-size: 1rem;
+    margin-right: 8px;
+    color: rgb(231, 231, 231);
+    font-weight: 700;
+}
+
+.info-label img {
+    margin-right: 4px;
+    scale: 80%;
+    color: rgb(255, 255, 255);
+}
+
+.card:hover .card-title {
+    opacity: 100%;
+    transition-duration: .5s;
+}
+.card:hover .info-label {
+    opacity: 100%;
+    transition-duration: 1.5s;
+}
+
+/* ==================================== */
+
+
+/* Modal */
+.modal-body{
+    padding: 0;
+    overflow: hidden;
+    border-radius: 1rem;
+}
+
+.btn-close {
+    position: absolute;
+    top: 16px;
+    margin-right: 16px;
+    z-index: 5;
+}
+
+.btn-stroke{
+    background-color: #0c0c0c00;
+    border: solid 2px #ffffff;
+    border-radius: 100%;
+    width: 2.8rem;
+    height: 2.8rem;
+    margin-left: .5rem;
+}
+
+.btn-secondary-modal{
+    background-color: #F8D13B;
+
+}
+
+.btn-secondary-modal:hover{
+    background-color: #eeb71f;
+    color: #050505;
+
+}
+.container-landscape-poster{
+    align-items: end;
+    justify-content: center;
+    height: 50vh;
+    overflow: hidden;
+    z-index: 0;
+    margin-bottom: 0;
+}
+
+.landscapePosterOverlay{ 
+    background: linear-gradient(0deg, #2B2B2B 0%, rgba(255, 255, 255, 0) 96.91%);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 4;
+}
+
+.landscape-poster{
+    scale: 100%;
+    z-index: 0;
+    z-index: 1;
+}
+
+
+.regular-poster-modal{
+    width: 100%;
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+.info-label-modal {
+    font-size: 0.8rem;
+    margin-right: 16px;
+    color: rgb(231, 231, 231);
+    font-weight: 700;
+}
+.rate-label-modal {
+    background-color: #F8D13B;
+    color: rgb(37, 37, 37);
+    padding: 2px 8px;
+    border-radius: 50px;
+    font-size: 0.8rem;
+    margin-right: 16px;
+}
+
+.actor-profile{
+    width: 3rem;
+}
+
+.actor-profile-container{
+    padding: .5rem;
+    margin-right: .5rem;
+}
+
+.profile-description{
+    font-size: .6rem;
+    color: #acacac;
+}
+
+.actor-name-soon{
+    color: rgb(255, 255, 255);
+    font-size: .7rem;
+    margin-top: .7rem;
+}
+.cast-soon{
+    color: rgb(255, 255, 255);
+    font-size: .7rem;
+    margin-top: .7rem;
+}
+
+.cast-soon-container{
+    color: rgb(255, 255, 255);
+    font-size: .7rem;
+    margin-top: .7rem;
+}
+
+
+.modal-content{
+    background-color: #1a1a1a00;
+    backdrop-filter: blur(8px);
+}
+
+.modal-description{
+    padding-left: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    color: rgb(255, 255, 255);
+}
+
+.modal-description .regular-poster-modal{
+    padding-left: .5rem;
+    display: none;
+}
+
+.modal-content-container{
+    z-index: 4;
+    position: relative;
+    background: linear-gradient(180deg, #2B2B2B 0%, rgba(35, 35, 35, 0.356) 100%);
+    padding-bottom: 2rem;
+}
+
+#modal-content-container{
+    margin-top: -10rem;
+}
+
+.modal-2-container {
+    background-color: aqua;
+    width: 100%;
+    padding: 0.8rem;
+    transition-duration: 0.5s;
+    background: linear-gradient(360deg, #484848 10.42%, rgba(40, 39, 39, 0) 100%);
+    backdrop-filter: blur(1px);
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    margin-bottom: -3em;
+}
+
+.card:hover .modal-2-container {
+    background: linear-gradient(360deg, #484848 0.42%, rgba(40, 39, 39, 0) 100%);
+    backdrop-filter: blur(5px);
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    margin-bottom: 0px;
+}
+/* ======================================= */
+
+/* Sin In Modal */
+.modal-body-sign{
+    padding: 3rem;
+    color: white;
+    align-items: end;
+    border-radius: 1rem;
+}
+
+.signin-modal{
+    background-color: rgba(49, 49, 49, 0.541);
+    
+    border-radius: 1rem;
+}
+
+.signin{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: end;
+}
+
+.btn-close-signin-modal{
+    position: absolute;
+    top: 1rem;
+}
+
+.head-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+/* ==================================== */
+
+
+/* Coming Soon  */
+
+.header-content-soon {
+    height: 100vh;
+    padding: 64px;
+    border-radius: 1rem;
+}
+
+.header-wow {
+    background-image: url('./src/Poster-landscape/wolf-wallstreet-landscape.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 64vh;
+    border-radius: 1rem;
+}
+
+.header-inception {
+    background-image: url('./src/Poster-landscape/Inception-landscape.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 64vh;
+    border-radius: 1rem;
+}
+
+.card-container {
+    padding: 1rem;
+}
+
+.card-horizontal {
+    height: 58vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.carousel-inner-soon{
+    height: 100%;
+}
+
+.coming-soon-hide{
+    height: 100%;
+    border-radius: 15px;
+}
+
+
+
+.carousel-soon{
+    border-radius: 1rem;
+}
+
+
+/* ==================================== */
+
+/* Foooter */
+.alert-absolute{
+    position: fixed;
+    z-index: 3;
+    width: 20vw;
+    bottom: .1rem;
+
+}
+
+.darkmode-switch{
+    position: fixed;
+    padding: 1rem;
+    padding-left: 4rem;
+    right: 2rem;
+    z-index: 20;
+    bottom: 2rem;
+    width: 12rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    border-radius: 2rem;
+}
+
+#light-mode{
+    background-color: #252525;
+}
+/* .alert-fixed{
+    display: flex;
+    align-items: end;
+    justify-content: end;
+} */
+
+#kolom1{
+    padding: 2rem;
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+#kolom2{
+    padding: 2rem;
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+#kolom3{
+    padding: 2rem;
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+#kolom4{
+    padding: 2rem;
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+#kolom4 ul{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    align-items: start;
+    justify-content: start;
+}
+
+#kolom2 ul{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    align-items: start;
+    justify-content: start;
+}
+
+#kolom4 li{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: start;
+}
+
+#kolom4 img{
+    margin-right: .8rem;
+}
+
+#barisPertama a{
+    text-decoration: none;
+    color: rgb(238, 238, 238);
+
+}
+/* =================================== */
+
+
+/* Responsive */
+@media screen and (max-width: 767px) {
+    .info-label {
+        display: none;
+    }
+
+    .info-label img {
+        display: none;
+    }
+
+    .coming-soon-hide{
+        display: none;
+    }
+
+    .watch-icon{
+        display: none;
+    }
+
+    .modal-content-container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .modal-regular-poster-container{
+        display: none;
+    }
+
+    .modal-description{
+        width: 100%;
+    }
+
+    .modal-description .regular-poster-modal{
+        padding-left: .5rem;
+        display: block;
+    }
+
+    
+.header-tenet {
+    background-image: url('./src/poster-header/Oppenheimer-header.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    align-items: end;
+    justify-content: start;
+    height: 100vh;
+}
+
+.header-dunkirk {
+    background-image: url('./src/poster-header/Dunkirk-header.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    align-items: end;
+    justify-content: start;
+    height: 100vh;
+}
+
+.color-overlay{
+    width: 120%;
+    height: 100%;
+    background: linear-gradient(03deg, #000000 -0.22%, rgba(39, 39, 39, 0.718807) 25.03%, rgba(52, 52, 52, 0.456944) 45.68%, rgba(74, 74, 74, 0) 61.95%);
+}
+.header-inter {
+    background-image: url('./src/poster-header/Interstellar-header.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    align-items: end;
+    justify-content: start;
+    height: 100vh;
+}
+
+.header-description{
+    padding: 1rem;
+    /* background: linear-gradient(61.9deg, #393939 -1.06%, rgba(74, 74, 74, 0.56) 97.06%); */
+    /* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); */
+    /* backdrop-filter: blur(15.5px); */
+    width: 90vw;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: end;
+    border-radius: 0.5rem;
+}
+
+.header-content {
+    height: 100vh;
+    padding: 2rem;
+}
+.btn-stroke{
+    display: none;
+}
+
+.btn-view-modal{
+    width: 100%;
+}
+
+.navbar{
+    margin-bottom: -90px;
+    z-index: 5;
+    padding: 0px 1rem;
+}
+
+#kolom2{
+    display: none;
+}
+
+#kolom3{
+    display: none;
+}
+
+
+
+
+
+
+}
+
+@media screen and (max-width: 993px) {
+
+    .btn-view-modal{
+        width: 100%;
+    }
+    
+    .modal-content-container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .modal-regular-poster-container{
+        display: none;
+    }
+
+    .modal-description{
+        width: 100%;
+    }
+
+    .modal-description .regular-poster-modal{
+        padding-left: .5rem;
+        display: block;
+    }
+
+    /* Putus asa ini gimana caranya biar berwarna background pas collapsenya:( */
+    .navbar-collapse.collapse{
+        margin-top: 3rem;
+        background-color: #222222;
+        padding: 2rem;
+        border-radius: 1rem;
+    }
+
+    .btn-stroke{
+        display: none;
+    }
+
+    .navbar{
+        margin-bottom: -90px;
+        z-index: 5;
+        padding: 0px 2rem;
+    }
+
+    
+#kolom2{
+    display: none;
+}
+
+#kolom3{
+    display: none;
+}
+
+
+
+
+
+    
+
+}
