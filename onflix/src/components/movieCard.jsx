@@ -1,6 +1,22 @@
 import cardImage from '../assets/regular-poster/Creed.png'
+import Axios from 'axios'
+import { useEffect, useState } from 'react'
+
 
 function WatchList() {
+
+
+    
+    useEffect(() => {
+        Axios({
+            method: 'get',
+            url: 'https://api.themoviedb.org/3/movie/popular?api_key=aa4cf977385f47ebf8160e43b648a495&page=1&region=US&language=en-US',
+        })
+            .then(function (response) {
+                // console.log(response)
+                // setData(response.data.data)
+            });
+    }, [])
     return (
         <>
             {/* Card */}
@@ -65,6 +81,7 @@ function WatchList() {
                                             <span className="rate-label-modal"> Biography</span>
                                             <span className="rate-label-modal"> Drama</span>
                                             <span className="rate-label-modal"> Action</span>
+                                            
 
 
                                         </div>
