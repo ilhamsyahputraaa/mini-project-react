@@ -293,7 +293,9 @@ text-decoration: none;
 /* ==================================== */
 
 /* Card */
-
+.CardsContainer{
+  display: flex;
+}
 .product-card-container{
   gap: 1rem;
   overflow-y: visible;
