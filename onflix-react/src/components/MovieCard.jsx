@@ -8,6 +8,8 @@ import PlayButton from '../assets/play-fill 1.svg'
 
 function MovieCard() {
     const [popularMovies, SetPopularMovies] = useState ([])
+
+    
     
 
     useEffect(() => {
@@ -19,7 +21,7 @@ function MovieCard() {
             console.log(response.data.results)
             SetPopularMovies(response.data.results)
         });
-}, [])
+    }, [])
 
     const PopularMovieList = () => {
         return popularMovies.map((movie, i) => {

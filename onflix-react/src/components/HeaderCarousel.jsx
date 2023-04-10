@@ -7,7 +7,9 @@ import PlayButton from '../assets/play-fill 1.svg'
 
 
 function HeaderCarousel () {
-    const [data, setData] = useState ([0])
+    const [movie, SetMovie] = useState ([])
+    // const baseImageURL =  import.meta.env.REACT_APP_BASEURL
+    
 
     useEffect(() => {
     Axios({
@@ -16,7 +18,7 @@ function HeaderCarousel () {
     })
         .then(function (response) {
             console.log(response.data.results)
-            setData(response.data.results)
+            SetMovie(response.data.results)
         });
 }, [])
 
@@ -34,18 +36,18 @@ function HeaderCarousel () {
             <div className="carousel-inner">
                 {/* carousel 1 */}
                 <div className="carousel-item active" data-bs-interval="5000" >
-                    <div className="header-tenet" style={{backgroundImage: `url('https://image.tmdb.org/t/p/w1280${data[0].backdrop_path}')`}}>
+                    <div className="header-tenet" style={{backgroundImage: `url('https://image.tmdb.org/t/p/w1280${movie[0].backdrop_path}')`}}>
                         <div className="row d-flex align-items-center header-content color-overlay">
                             {/* Description */}
                             <div className="header-description col-lg-4 col-sm-12">
                                 <h1 className="mb-4
-                                ">{data[0].original_title}</h1>
+                                ">{movie[0].original_title}</h1>
                                 <div className="info-icons mb-4">
-                                    <span className="rate-label-header"> <img src={RateIcon} alt=""/>{data[0].vote_average}</span>
+                                    <span className="rate-label-header"> <img src={RateIcon} alt=""/>{movie[0].vote_average}</span>
                                     <span className="info-label-header"> <img src={TimeIcon} alt=""/>105 Minutes</span>
-                                    <span className="info-label-header"> <img src={ReleaseIcon} alt=""/>{data[0].release_date}</span>
+                                    <span className="info-label-header"> <img src={ReleaseIcon} alt=""/>{movie[0].release_date}</span>
                                 </div>
-                                <p className="mb-4">{data[0].overview}</p>
+                                <p className="mb-4">{movie[0].overview}</p>
                                 <span>
                                     <button type="button" className="btn btn-warning me-2" data-bs-toggle="modal" data-bs-target="#exampleModal3">View Detail</button>
 
@@ -61,18 +63,18 @@ function HeaderCarousel () {
                 </div>
                 {/* carousel 2 */}
                 <div className="carousel-item" data-bs-interval="5000" >
-                <div className="header-tenet" style={{backgroundImage: `url('https://image.tmdb.org/t/p/w1280${data[1].backdrop_path}')`}}>
+                <div className="header-tenet" style={{backgroundImage: `url('https://image.tmdb.org/t/p/w1280${movie[1].backdrop_path}')`}}>
                         <div className="row d-flex align-items-center header-content color-overlay">
                             {/* Description */}
                             <div className="header-description col-lg-4 col-sm-12">
                                 <h1 className="mb-4
-                                ">{data[1].original_title}</h1>
+                                ">{movie[1].original_title}</h1>
                                 <div className="info-icons mb-4">
-                                    <span className="rate-label-header"> <img src={RateIcon} alt=""/>{data[1].vote_average}</span>
+                                    <span className="rate-label-header"> <img src={RateIcon} alt=""/>{movie[1].vote_average}</span>
                                     <span className="info-label-header"> <img src={TimeIcon} alt=""/>105 Minutes</span>
-                                    <span className="info-label-header"> <img src={ReleaseIcon} alt=""/>{data[1].release_date}</span>
+                                    <span className="info-label-header"> <img src={ReleaseIcon} alt=""/>{movie[1].release_date}</span>
                                 </div>
-                                <p className="mb-4">{data[1].overview}</p>
+                                <p className="mb-4">{movie[1].overview}</p>
                                 <span>
                                     <button type="button" className="btn btn-warning me-2" data-bs-toggle="modal" data-bs-target="#exampleModal3">View Detail</button>
 
@@ -88,18 +90,18 @@ function HeaderCarousel () {
 
                 {/* carousel 3 */}
                 <div className="carousel-item" data-bs-interval="5000" >
-                <div className="header-tenet" style={{backgroundImage: `url('https://image.tmdb.org/t/p/w1280${data[2].backdrop_path}')`}}>
+                <div className="header-tenet" style={{backgroundImage: `url('https://image.tmdb.org/t/p/w1280${movie[2].backdrop_path}')`}}>
                         <div className="row d-flex align-items-center header-content color-overlay">
                             {/* Description */}
                             <div className="header-description col-lg-4 col-sm-12">
                                 <h1 className="mb-4
-                                ">{data[2].original_title}</h1>
+                                ">{movie[2].original_title}</h1>
                                 <div className="info-icons mb-4">
-                                    <span className="rate-label-header"> <img src={RateIcon} alt=""/>{data[2].vote_average}</span>
+                                    <span className="rate-label-header"> <img src={RateIcon} alt=""/>{movie[2].vote_average}</span>
                                     <span className="info-label-header"> <img src={TimeIcon} alt=""/>105 Minutes</span>
-                                    <span className="info-label-header"> <img src={ReleaseIcon} alt=""/>{data[2].release_date}</span>
+                                    <span className="info-label-header"> <img src={ReleaseIcon} alt=""/>{movie[2].release_date}</span>
                                 </div>
-                                <p className="mb-4">{data[2].overview}</p>
+                                <p className="mb-4">{movie[2].overview}</p>
                                 <span>
                                     <button type="button" className="btn btn-warning me-2" data-bs-toggle="modal" data-bs-target="#exampleModal3">View Detail</button>
 
