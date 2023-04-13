@@ -10,8 +10,8 @@ function Home() {
   return (
     <div className="Home">
       <NavigationBar />
-      {/* <HeaderCarousel /> */}
-      <MovieCombine />
+      <HeaderCarousel />
+      {/* <MovieCombine /> */}
       <MovieCard />
       <ComingSoon />
     </div>

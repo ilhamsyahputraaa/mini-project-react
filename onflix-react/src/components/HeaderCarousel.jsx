@@ -5,6 +5,8 @@ import TimeIcon from '../assets/clock.svg'
 import RateIcon from '../assets/star-fill.svg'
 import PlayButton from '../assets/play-fill 1.svg'
 
+// 
+
 
 function HeaderCarousel () {
     const [movie, SetMovie] = useState ([])
@@ -36,7 +38,7 @@ function HeaderCarousel () {
             <div className="carousel-inner">
                 {/* carousel 1 */}
                 <div className="carousel-item active" data-bs-interval="5000" >
-                    <div className="header-tenet" style={{backgroundImage: `url('https://image.tmdb.org/t/p/w1280${movie[0].backdrop_path}')`}}>
+                    <div className="header-tenet" style={{backgroundImage: `url(https://image.tmdb.org/t/p/w1280${movie[0].backdrop_path})`}}>
                         <div className="row d-flex align-items-center header-content color-overlay">
                             {/* Description */}
                             <div className="header-description col-lg-4 col-sm-12">
@@ -63,7 +65,7 @@ function HeaderCarousel () {
                 </div>
                 {/* carousel 2 */}
                 <div className="carousel-item" data-bs-interval="5000" >
-                <div className="header-tenet" style={{backgroundImage: `url('https://image.tmdb.org/t/p/w1280${movie[1].backdrop_path}')`}}>
+                <div className="header-tenet" style={{backgroundImage: `url(https://image.tmdb.org/t/p/w1280${movie[1].backdrop_path})`}}>
                         <div className="row d-flex align-items-center header-content color-overlay">
                             {/* Description */}
                             <div className="header-description col-lg-4 col-sm-12">
@@ -90,7 +92,7 @@ function HeaderCarousel () {
 
                 {/* carousel 3 */}
                 <div className="carousel-item" data-bs-interval="5000" >
-                <div className="header-tenet" style={{backgroundImage: `url('https://image.tmdb.org/t/p/w1280${movie[2].backdrop_path}')`}}>
+                <div className="header-tenet" style={{backgroundImage: `url(https://image.tmdb.org/t/p/w1280${movie[2].backdrop_path})`}}>
                         <div className="row d-flex align-items-center header-content color-overlay">
                             {/* Description */}
                             <div className="header-description col-lg-4 col-sm-12">

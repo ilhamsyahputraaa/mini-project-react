@@ -605,6 +605,8 @@ text-decoration: none;
   flex-direction: column;
   gap: .5rem;
   color: rgb(255, 255, 255);
+  align-items: start;
+  text-align: start;
 }
 
 .modal-description .regular-poster-modal{
