@@ -1,7 +1,47 @@
 import onFlixLogo from '../assets/onflix logo.png'
 import '../index.css'
+import { Container, Nav, Navbar, NavDropdown } from "react-bootstrap";
+import SignInModal from './SignInModal';
 
 function NavigationBar () {
+
+  const [isLogin, setIsLogin] = useState(false);
+  const [usernameID, setUsernameID] = useState("");
+
+  const handleIsLogin = () => {
+    localStorage.getItem("SID") ? setIsLogin(true) : setIsLogin(false);
+  };
+
+  // Delete Session ID
+  const deleteSession = () => {
+    alert("You have logged out!");
+    localStorage.removeItem("SID");
+    setIsLogin(false);
+    axios({
+      method: "post",
+      url: `https://api.themoviedb.org/3/authentication/session?api_key=${process.env.REACT_APP_APIKEY}`,
+      data: {
+        session_id: sessionID,
+      },
+    });
+  };
+
+  useEffect(() => {
+    handleIsLogin();
+
+    // Fetch account details
+    if (isLogin) {
+      axios({
+        method: "get",
+        url: `https://api.themoviedb.org/3/account?api_key=${process.env.REACT_APP_APIKEY}&session_id=${sessionID}`,
+      }).then(function (response) {
+        setUsernameID(response.data.username);
+      });
+    }
+  });
+
+  const sessionID = localStorage.getItem("SID");
+
     return (
         <>
         <nav className="navbar navbar-expand-lg navbar-dark nav-transparent position-fixed w-100">
@@ -24,8 +64,17 @@ function NavigationBar () {
                   <li className="nav-item"><a className="nav-link" href="">Contact Us</a></li>
                 </ul>
                 {/* Button Log In */}
-                <button type="button" className="btn btn-warning me-2" data-bs-toggle="modal" data-bs-target="#signInModal">Log In</button>
                 
+                <div className="forLogin">
+                  {isLogin ? (
+                    <NavDropdown title={usernameID} id="nav-dropdown">
+                      <NavDropdown.Item onClick={deleteSession}>Logout</NavDropdown.Item>
+                    </NavDropdown>
+                  ) : (<a href="/login" className="login-header">
+                        Login
+                      </a>
+                  )}
+                </div>
               </div>
             </div>
           </nav>
