@@ -3,7 +3,9 @@ import '../App.css'
 import NavigationBar from "../components/NavigationBar";
 import ComingSoon from "../components/ComingSoon";
 import HeaderCarousel from "../components/HeaderCarousel";
-import MovieCombine from "../components/MovieCombine";
+import Footer from "../components/Footer";
+import MovieCombine from "../components/MovieCombine"
+import TopRated from "../components/TopRated";
 
 function Home() {
 
@@ -12,8 +14,10 @@ function Home() {
       <NavigationBar />
       <HeaderCarousel />
       {/* <MovieCombine /> */}
+      <TopRated />
       <MovieCard />
       <ComingSoon />
+      <Footer />
     </div>
   )
 }

@@ -59,7 +59,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
-h5{
+h5,h2{
   color: white;
 }
 
@@ -277,6 +277,11 @@ text-decoration: none;
 
 /* Card */
 
+.section-head1{
+  align-items: start;
+  text-align: start;
+  margin-top: 5rem;
+}
 
 .product-card-container{
   gap: 1rem;
@@ -302,7 +307,6 @@ text-decoration: none;
   scale: 100%;
   border: 0;
   padding: 0;
-  height: 100%;
 }
 
 .card:hover {
@@ -372,6 +376,7 @@ text-decoration: none;
 /* Card Image */
 .card-img-overlay {
   padding: 0;
+  height: 100%;
 }
 
 .card-img {
@@ -518,7 +523,8 @@ text-decoration: none;
 
 }
 .container-landscape-poster{
-  align-items: end;
+  display: flex;
+  align-items: center;
   justify-content: center;
   height: 50vh;
   overflow: hidden;
@@ -538,6 +544,7 @@ text-decoration: none;
   scale: 100%;
   z-index: 0;
   z-index: 1;
+  align-items: center;
 }
 
 
@@ -603,10 +610,11 @@ text-decoration: none;
   padding-left: 1.5rem;
   display: flex;
   flex-direction: column;
-  gap: .5rem;
+  gap: 2rem;
   color: rgb(255, 255, 255);
   align-items: start;
   text-align: start;
+  justify-content: center;
 }
 
 .modal-description .regular-poster-modal{

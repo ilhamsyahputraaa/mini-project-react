@@ -5,8 +5,8 @@ import ReleaseIcon from '../assets/eye.svg'
 import TimeIcon from '../assets/clock.svg'
 import RateIcon from '../assets/star-fill.svg'
 
-function MovieCard() {
-    const [popularMovies, SetPopularMovies] = useState ([])
+function TopRated() {
+    const [topRated, SetTopRated] = useState ([])
 
     
     
@@ -14,16 +14,16 @@ function MovieCard() {
     useEffect(() => {
     Axios({
         method: 'get',
-        url: 'https://api.themoviedb.org/3/movie/popular?api_key=aa4cf977385f47ebf8160e43b648a495&page=1&region=US&language=en-US',
+        url: 'https://api.themoviedb.org/3/movie/top_rated?api_key=aa4cf977385f47ebf8160e43b648a495&page=1&region=US&language=en-US',
     })
         .then(function (response) {
             console.log(response.data.results)
-            SetPopularMovies(response.data.results)
+            SetTopRated(response.data.results)
         });
     }, [])
 
-    const PopularMovieList = () => {
-        return popularMovies.map((movie, i) => {
+    const TopRatedList = () => {
+        return topRated.map((movie, i) => {
             return(
                 <>
                 {/* Card */}
@@ -113,15 +113,15 @@ function MovieCard() {
     return (
         <>
         <div className='section-head1 container-fluid me-3 ms-3'>
-        <h2> Watchlist </h2>  
+        <h2> Top Rated </h2>  
         </div>
         <div className="column d-flex justify-content-start col-12  position-relative me-3 ms-3 product-card-container">
-            <PopularMovieList />
+            <TopRatedList />
         </div>
         
         </>
     )
 }
 
-export default MovieCard;
+export default TopRated;
 

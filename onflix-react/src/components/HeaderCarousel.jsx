@@ -20,7 +20,7 @@ function HeaderCarousel () {
     })
         .then(function (response) {
             console.log(response.data.results)
-            SetMovie(response.data.results)
+            SetMovie(response.data.results.slice(0,8))
         });
 }, [])
 
@@ -29,93 +29,29 @@ function HeaderCarousel () {
         <section id="header-carousel">
         <div id="carouselHeader" className="carousel slide" data-bs-ride="carousel">
             {/* indicator Carousel */}
-            <div className="carousel-indicators">
-                <button type="button" data-bs-target="#carouselHeader" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselHeader" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselHeader" data-bs-slide-to="2" aria-label="Slide 3"></button>
-            </div>
 
             <div className="carousel-inner">
-                {/* carousel 1 */}
-                <div className="carousel-item active" data-bs-interval="5000" >
-                    <div className="header-tenet" style={{backgroundImage: `url(https://image.tmdb.org/t/p/w1280${movie[0].backdrop_path})`}}>
-                        <div className="row d-flex align-items-center header-content color-overlay">
-                            {/* Description */}
-                            <div className="header-description col-lg-4 col-sm-12">
-                                <h1 className="mb-4
-                                ">{movie[0].original_title}</h1>
-                                <div className="info-icons mb-4">
-                                    <span className="rate-label-header"> <img src={RateIcon} alt=""/>{movie[0].vote_average}</span>
-                                    <span className="info-label-header"> <img src={TimeIcon} alt=""/>105 Minutes</span>
-                                    <span className="info-label-header"> <img src={ReleaseIcon} alt=""/>{movie[0].release_date}</span>
+                {movie.map((val, idx)=> {
+                    return (
+                        <div className={`carousel-item ${idx===0 ? 'active' : ''}`} key={idx} data-bs-interval="4000" >
+                            <div className="header-tenet" style={{backgroundImage: `url(https://image.tmdb.org/t/p/w1280${val.backdrop_path})`}}>
+                                <div className="row d-flex align-items-center header-content color-overlay">
+                                    {/* Description */}
+                                    <div className="header-description col-lg-4 col-sm-12">
+                                        <h1 className="mb-4">{val.original_title}</h1>
+                                        <div className="info-icons mb-4">
+                                            <span className="rate-label-header"> <img src={RateIcon} alt=""/>{val.vote_average}</span>
+                                            <span className="info-label-header"> <img src={TimeIcon} alt=""/>{val.release_date}</span>
+                                            <span className="info-label-header"> <img src={ReleaseIcon} alt=""/>ID-{val.id}</span>
+                                        </div>
+                                        <p className="mb-4">{val.overview}</p>
+                                    </div>
                                 </div>
-                                <p className="mb-4">{movie[0].overview}</p>
-                                <span>
-                                    <button type="button" className="btn btn-warning me-2" data-bs-toggle="modal" data-bs-target="#exampleModal3">View Detail</button>
-
-                                    <a className="btn btn-secondary " href="https://www.youtube.com/watch?v=bK6ldnjE3Y0&t=2s" role="button" target="blank"><img src={PlayButton} alt="" className="watch-icon" /> Watch Trailer</a>
-                                </span>
-                                
                             </div>
-
                         </div>
-
-                    </div>
-                    
-                </div>
-                {/* carousel 2 */}
-                <div className="carousel-item" data-bs-interval="5000" >
-                <div className="header-tenet" style={{backgroundImage: `url(https://image.tmdb.org/t/p/w1280${movie[1].backdrop_path})`}}>
-                        <div className="row d-flex align-items-center header-content color-overlay">
-                            {/* Description */}
-                            <div className="header-description col-lg-4 col-sm-12">
-                                <h1 className="mb-4
-                                ">{movie[1].original_title}</h1>
-                                <div className="info-icons mb-4">
-                                    <span className="rate-label-header"> <img src={RateIcon} alt=""/>{movie[1].vote_average}</span>
-                                    <span className="info-label-header"> <img src={TimeIcon} alt=""/>105 Minutes</span>
-                                    <span className="info-label-header"> <img src={ReleaseIcon} alt=""/>{movie[1].release_date}</span>
-                                </div>
-                                <p className="mb-4">{movie[1].overview}</p>
-                                <span>
-                                    <button type="button" className="btn btn-warning me-2" data-bs-toggle="modal" data-bs-target="#exampleModal3">View Detail</button>
-
-                                    <a className="btn btn-secondary " href="https://www.youtube.com/watch?v=bK6ldnjE3Y0&t=2s" role="button" target="blank"><img src={PlayButton} alt="" className="watch-icon" /> Watch Trailer</a>
-                                </span>
-                                
-                            </div>
-
-                        </div>
-
-                    </div>
-                </div>
-
-                {/* carousel 3 */}
-                <div className="carousel-item" data-bs-interval="5000" >
-                <div className="header-tenet" style={{backgroundImage: `url(https://image.tmdb.org/t/p/w1280${movie[2].backdrop_path})`}}>
-                        <div className="row d-flex align-items-center header-content color-overlay">
-                            {/* Description */}
-                            <div className="header-description col-lg-4 col-sm-12">
-                                <h1 className="mb-4
-                                ">{movie[2].original_title}</h1>
-                                <div className="info-icons mb-4">
-                                    <span className="rate-label-header"> <img src={RateIcon} alt=""/>{movie[2].vote_average}</span>
-                                    <span className="info-label-header"> <img src={TimeIcon} alt=""/>105 Minutes</span>
-                                    <span className="info-label-header"> <img src={ReleaseIcon} alt=""/>{movie[2].release_date}</span>
-                                </div>
-                                <p className="mb-4">{movie[2].overview}</p>
-                                <span>
-                                    <button type="button" className="btn btn-warning me-2" data-bs-toggle="modal" data-bs-target="#exampleModal3">View Detail</button>
-
-                                    <a className="btn btn-secondary " href="https://www.youtube.com/watch?v=bK6ldnjE3Y0&t=2s" role="button" target="blank"><img src={PlayButton} alt="" className="watch-icon" /> Watch Trailer</a>
-                                </span>
-                                
-                            </div>
-
-                        </div>
-
-                    </div>
-                </div>
+                        
+                    )
+                })}
                 
             </div>
 
