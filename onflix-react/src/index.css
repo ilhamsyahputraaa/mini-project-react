@@ -662,6 +662,7 @@ text-decoration: none;
   color: white;
   align-items: end;
   border-radius: 1rem;
+  margin: 10rem;
 }
 
 .signin-modal{

@@ -4,7 +4,6 @@ import NavigationBar from "../components/NavigationBar";
 import ComingSoon from "../components/ComingSoon";
 import HeaderCarousel from "../components/HeaderCarousel";
 import Footer from "../components/Footer";
-import MovieCombine from "../components/MovieCombine"
 import TopRated from "../components/TopRated";
 
 function Home() {
@@ -13,7 +12,6 @@ function Home() {
     <div className="Home">
       <NavigationBar />
       <HeaderCarousel />
-      {/* <MovieCombine /> */}
       <TopRated />
       <MovieCard />
       <ComingSoon />

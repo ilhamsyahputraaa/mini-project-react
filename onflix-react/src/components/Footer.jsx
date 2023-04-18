@@ -1,4 +1,8 @@
-
+import GitHub from '../assets/sosmed icons/github.svg'
+import Behance from '../assets/sosmed icons/behance.svg'
+import Dribbble from '../assets/sosmed icons/dribbble.svg'
+import Instagram from '../assets/sosmed icons/instagram.svg'
+import LinkedIn from '../assets/sosmed icons/linkedin.svg'
 
 function Footer () {
     return (
@@ -30,11 +34,11 @@ function Footer () {
                 <div id="kolom4" className="col-md-3">
                 <h5>Follow Me</h5>
                 <ul className="list-unstyled">
-                    <li><a href="https://dribbble.com/arteroid"> <img src="/src/sosmed icons/dribbble.svg" alt=""/> Dribbble</a></li>
-                    <li><a href="https://www.behance.net/ilhamsyahzp"> <img src="/src/sosmed icons/behance.svg" alt=""/> Behance</a></li>
-                    <li><a href="https://github.com/ilhamsyahputraaa"> <img src="/src/sosmed icons/github.svg" alt=""/> Github</a></li>
-                    <li><a href="https://www.instagram.com/ilhamsyahzp/"> <img src="/src/sosmed icons/instagram.svg" alt=""/> Instagram</a></li>
-                    <li><a href="https://www.linkedin.com/feed/"> <img src="/src/sosmed icons/linkedin.svg" alt=""/>LinkedIn</a></li>
+                    <li><a href="https://dribbble.com/arteroid"> <img src={Dribbble} alt=""/> Dribbble</a></li>
+                    <li><a href="https://www.behance.net/ilhamsyahzp"> <img src={Behance} alt=""/> Behance</a></li>
+                    <li><a href="https://github.com/ilhamsyahputraaa"> <img src={GitHub} alt=""/> Github</a></li>
+                    <li><a href="https://www.instagram.com/ilhamsyahzp/"> <img src={Instagram} alt=""/> Instagram</a></li>
+                    <li><a href="https://www.linkedin.com/feed/"> <img src={LinkedIn} alt=""/>LinkedIn</a></li>
                 </ul>
                 </div>
             </div>

@@ -1,7 +1,8 @@
+import { useState, useEffect } from 'react';
 import onFlixLogo from '../assets/onflix logo.png'
 import '../index.css'
-import { Container, Nav, Navbar, NavDropdown } from "react-bootstrap";
-import SignInModal from './SignInModal';
+import { NavDropdown } from "react-bootstrap";
+useState
 
 function NavigationBar () {
 
@@ -68,7 +69,9 @@ function NavigationBar () {
                 <div className="forLogin">
                   {isLogin ? (
                     <NavDropdown title={usernameID} id="nav-dropdown">
+                      <NavDropdown.Item >View Profile</NavDropdown.Item>
                       <NavDropdown.Item onClick={deleteSession}>Logout</NavDropdown.Item>
+                      
                     </NavDropdown>
                   ) : (<a href="/login" className="login-header">
                         Login

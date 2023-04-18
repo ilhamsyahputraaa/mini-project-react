@@ -1,11 +1,25 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
-import 'bootstrap/dist/css/bootstrap.min.css'
-import './index.css'
-import Home from './pages/Home'
+import React from "react";
+import ReactDOM from "react-dom/client";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
-ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
-    <Home />
-  </React.StrictMode>,
-)
+import "./index.css";
+import SignInModal from "./components/SignInModal";
+
+import "bootstrap/dist/css/bootstrap.min.css";
+import Home from "./pages/Home";
+
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <Home />,
+    errorElement: <p>Page Not Found</p>,
+  },
+  {
+    path: "/login",
+    element: <SignInModal />,
+    errorElement: <p>Page Not Found</p>,
+  },
+]);
+const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(<RouterProvider router={router} />);
