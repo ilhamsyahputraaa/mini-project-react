@@ -5,42 +5,12 @@ import { NavDropdown } from "react-bootstrap";
 
 function NavigationBar () {
 
-  const [isLogin, setIsLogin] = useState(false);
-  const [usernameID, setUsernameID] = useState("");
-
-  const handleIsLogin = () => {
-    localStorage.getItem("SID") ? setIsLogin(true) : setIsLogin(false);
-  };
-
-  // Delete Session ID
-  const deleteSession = () => {
-    alert("You have logged out!");
-    localStorage.removeItem("SID");
-    setIsLogin(false);
-    axios({
-      method: "post",
-      url: `https://api.themoviedb.org/3/authentication/session?api_key=aa4cf977385f47ebf8160e43b648a495`,
-      data: {
-        session_id: sessionID,
-      },
-    });
-  };
-
-  useEffect(() => {
-    handleIsLogin();
-
-    // Fetch account details
-    if (isLogin) {
-      axios({
-        method: "get",
-        url: `https://api.themoviedb.org/3/account?api_key=${process.env.REACT_APP_APIKEY}&session_id=${sessionID}`,
-      }).then(function (response) {
-        setUsernameID(response.data.username);
-      });
-    }
-  });
-
-  const sessionID = localStorage.getItem("SID");
+  function handleLogout() {
+    localStorage.clear();
+    window.location.reload();
+  }
+  const isLogin = JSON.parse(localStorage.getItem("session"));
+  const account = JSON.parse(localStorage.getItem("account"));
 
     return (
         <>
@@ -66,11 +36,11 @@ function NavigationBar () {
                 {/* Button Log In */}
                 
                 <div className="forLogin">
-                  {isLogin ? (
-                    <NavDropdown title={usernameID} id="nav-dropdown">
-                      <NavDropdown.Item onClick={deleteSession}>Logout</NavDropdown.Item>
+                  {isLogin ? (<NavDropdown title={account.username} id="nav-dropdown" className='btn btn-warning me-2'>
+                      <NavDropdown.Item onClick={handleLogout}>Logout</NavDropdown.Item>
                       
                     </NavDropdown>
+                    
                   ) : (
                     <a href="/login" className="btn btn-warning me-2">
                       Login

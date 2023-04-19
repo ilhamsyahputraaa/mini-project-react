@@ -3,6 +3,7 @@ import Behance from '../assets/sosmed icons/behance.svg'
 import Dribbble from '../assets/sosmed icons/dribbble.svg'
 import Instagram from '../assets/sosmed icons/instagram.svg'
 import LinkedIn from '../assets/sosmed icons/linkedin.svg'
+import Logo from '../assets/logo/logo FUll dark.png'
 
 function Footer () {
     return (
@@ -13,7 +14,7 @@ function Footer () {
             <div id="barisPertama" className="row">
                 {/* Kolom 1 */}
                 <div id="kolom1" className="col-md-3">
-                    <img src="/src/logo/logo.png" alt=""/>
+                    <img src={Logo} alt=""/>
                 <p>Informasi tentang film terbaru dan film paling populer di box office worldwide.</p>
                 </div>
                 {/* Kolom 3 */}
