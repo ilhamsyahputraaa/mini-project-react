@@ -2,7 +2,6 @@ import { useState, useEffect } from 'react';
 import onFlixLogo from '../assets/onflix logo.png'
 import '../index.css'
 import { NavDropdown } from "react-bootstrap";
-useState
 
 function NavigationBar () {
 
@@ -20,7 +19,7 @@ function NavigationBar () {
     setIsLogin(false);
     axios({
       method: "post",
-      url: `https://api.themoviedb.org/3/authentication/session?api_key=${process.env.REACT_APP_APIKEY}`,
+      url: `https://api.themoviedb.org/3/authentication/session?api_key=aa4cf977385f47ebf8160e43b648a495`,
       data: {
         session_id: sessionID,
       },
@@ -69,13 +68,13 @@ function NavigationBar () {
                 <div className="forLogin">
                   {isLogin ? (
                     <NavDropdown title={usernameID} id="nav-dropdown">
-                      <NavDropdown.Item >View Profile</NavDropdown.Item>
                       <NavDropdown.Item onClick={deleteSession}>Logout</NavDropdown.Item>
                       
                     </NavDropdown>
-                  ) : (<a href="/login" className="login-header">
-                        Login
-                      </a>
+                  ) : (
+                    <a href="/login" className="btn btn-warning me-2">
+                      Login
+                    </a>
                   )}
                 </div>
               </div>

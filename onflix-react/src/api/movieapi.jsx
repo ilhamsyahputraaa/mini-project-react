@@ -53,3 +53,13 @@ export const getMovieDetails = async (movieId) => {
     console.log(error);
   }
 };
+
+export const apiTmdb = axios.create({
+    baseURL: "https://api.themoviedb.org/3",
+    headers: {
+        Accept:"application/json"
+    },
+    params: {
+        api_key: "aa4cf977385f47ebf8160e43b648a495",
+    },
+})

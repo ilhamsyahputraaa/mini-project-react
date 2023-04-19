@@ -1,9 +1,9 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import LoginPage from "./components/LoginPage";
 
 import "./index.css";
-import SignInModal from "./components/SignInModal";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 import Home from "./pages/Home";
@@ -17,7 +17,7 @@ const router = createBrowserRouter([
   },
   {
     path: "/login",
-    element: <SignInModal />,
+    element: <LoginPage />,
     errorElement: <p>Page Not Found</p>,
   },
 ]);

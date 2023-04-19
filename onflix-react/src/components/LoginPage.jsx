@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { apiTmdb } from "../api/movieapi";
 import Logo from "../assets/logo/Logo FUll dark.png"
 
-const SignInModal = () => {
+const LoginPage = () => {
   
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
@@ -83,4 +83,4 @@ const SignInModal = () => {
   );
 };
 
-export default SignInModal;
+export default LoginPage;

@@ -403,7 +403,7 @@ text-decoration: none;
   width: 100%;
   padding: 0.8rem;
   transition-duration: 0.5s;
-  background: linear-gradient(0deg, #050505 6.31%, rgba(12, 12, 12, 0.041) 100%);
+  background: linear-gradient(0deg, #05050500 6.31%, rgba(12, 12, 12, 0.041) 100%);
   backdrop-filter: blur(.5px);
   display: flex;
   flex-direction: column;
@@ -722,6 +722,9 @@ text-decoration: none;
   justify-content: center;
   height: 64vh;
   border-radius: 1rem;
+}
+.Home{
+  background-color: #131313;
 }
 
 .card-container {
