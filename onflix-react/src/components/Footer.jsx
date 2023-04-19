@@ -3,7 +3,7 @@ import Behance from '../assets/sosmed icons/behance.svg'
 import Dribbble from '../assets/sosmed icons/dribbble.svg'
 import Instagram from '../assets/sosmed icons/instagram.svg'
 import LinkedIn from '../assets/sosmed icons/linkedin.svg'
-import Logo from '../assets/logo/logo FUll dark.png'
+import Logo from '../assets/logo/Logo FUll dark.png'
 
 function Footer () {
     return (
